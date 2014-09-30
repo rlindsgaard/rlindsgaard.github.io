@@ -6,8 +6,10 @@ layout: page
 
 <div class="posts">
 {% for post in site.posts limit: 5 %}
-  <div class="post row">
-    <h2><a href="{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date:"%Y-%m-%d" }}</small></h2>
+  <div class="content row">
+    <div class="page-header">
+      <h2><a href="{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date:"%Y-%m-%d" }}</small></h2>
+    </div>
     <div class="post_content">
       {{ post.content }}
     </div>
