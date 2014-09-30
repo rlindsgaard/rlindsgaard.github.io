@@ -1,6 +1,7 @@
 ---
 title: Forbyg hacker problemer i Danmark
 layout: post
+tagline:
 ---
 
 Som så mange andre IT og sikkerhedsinteresserede mennesker i Danmark har jeg på det seneste fulgt med i den verserende CSC hackersag hvor den 21-årige dansker kendt i pressen som JT og den svenske Gotfried Svartholm Warg (GSW) er anklaget for at have brudt ind i CSCs systemer og have kopieret data fra bl.a. politiets databaser.
