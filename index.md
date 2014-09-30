@@ -1,4 +1,5 @@
 ---
+title: Blog
 layout: page
 ---
 {% include JB/setup %}
@@ -11,5 +12,6 @@ layout: page
     <div class="content">
       {{ post.content }}
     </div>
-  {% endfor %}
+  </div>
+{% endfor %}
 </div>
