@@ -1,5 +1,5 @@
 ---
-title: Forebyg hacker problemer i Danmark
+title: Forebyg hackerproblemer i Danmark
 layout: post
 tagline:
 ---
