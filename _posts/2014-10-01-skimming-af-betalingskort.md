@@ -3,7 +3,7 @@ title: Skimming af betalingskort
 layout: post
 ---
 
-Der er faldet dom om en dansk mand som har "skimmet" betalingskort (http://politiken.dk/indland/ECE2412101/21-aarig-skimmede-betalingskort-i-torvehallerne)
+Der er faldet dom om [en dansk mand som har "skimmet" betalingskort](http://politiken.dk/indland/ECE2412101/21-aarig-skimmede-betalingskort-i-torvehallerne)
 
 Skimming betyder kort fortalt at man læser informationerne på et kort, og kopierer kortet som artiklen også beskriver.
 
