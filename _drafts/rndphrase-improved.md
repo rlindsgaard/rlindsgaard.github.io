@@ -3,35 +3,65 @@ title: Introducing RndPhrase Improved
 layout: post
 ---
 
-RndPhrase Improved is a library and toool based on
-http://brinchj.blogspot.dk/2010/02/rndphrase.html|RndPhrase
-originally created by Johan Brinch. It is a rewrite to a modular
-structure, as well as improving on password generation algorithm.
+This blogpost covers a proper introduction to the RndPhrase.js
+library. The cornerstone of what I call RndPhrase Improved.
+It is based on RndPhrase, originally created and introduced by
+Johan Brinch http://brinchj.blogspot.dk/2010/02/rndphrase.html|RndPhrase.
 
-I consider RndPhrase to be an invaluable tool, but there are
-issues with the current code that needs to be adressed as I will
-discuss in the following section. Johan no longer maintains it
-himself and I have thereby taken it upon myself to do development
-and maintenance, renaming it to RndPhrase Improved.
+RndPhrase Improved is a rewrite of Johan's original implementation
+which features a modular structure and improvements to the underlying
+RndPhrase password generation algorithm.
 
-I will not cover the theory behind RndPhrase as Johan has already
-done that on his blog. However, I will provide a short description
-of the basic idea. Furthermore, I will cover design changes to
-the structure, the improvements that have implemented,
+I personally consider RndPhrase to be an invaluable tool, and
+have used it extensively ever since I heard of it.
+The original RndPhrase implementation never reached a stable release
+as there were unadressed issues which never were adressed.
+With the consent of Johan, I have taken on the task to develop
+and maintin the project. As this is a total rewrite I have
+named it RndPhrase Improved.
+
+I will not cover the theory behind RndPhrase as such, as Johan
+has already done that on his blog (follow the link in the first
+paragraph). However, I will provide a
+short description of the basic idea. Furthermore, I will cover
+design changes to the code, the improvements that have been made,
 and discuss the motivation behind these changes.
 
-## An RndPhrase Primer
-RndPhrase replaces the need for a password manager, as it makes
-it possible to generate passwords instead of encrypting and storing
-them, making it easy to steal them.
+I will not include a security discussion in this post, as it
+deserves a post of it's own. Rest assured, one is in the making.
 
-Using a hash of certain credentials (a master passphrase,
-an easy to remember and type password, and a context) it generates
-a long password considered "hard" by the community.
-Furthermore, due to the context it becomes easy (transparent actually)
-to use a different password for every domain it is used, even
-though the basic password is reused.
+## RndPhrase 101
+RndPhrase is designed to replace the need of a password manager.
+Instead of storing passwords in a database be it online like lastpass
+or offline like keepass, it generates secure passwords on-the-fly,
+so to speak, by using a hash function. And then use the resulting
+hash as a (deterministic) psuedo random number, in order to generate
+a password, that should hopefully be secure.
 
+Three pieces of information are used to generate the hash.
+
+1. A "master key" or seed, which is used globally. This is stored
+   in the session, in configuration or similar. This one should
+   be hard to guess.
+2. A location (typically the domain of where the password is to
+   be used. Eg. github.com). This one is more or less public
+3. An easy to remember (and type) password, which is used whenever
+   one would usually use a password.
+
+When RndPhrase is used as a plugin, the seed is stored in memory
+(hashed of course), the second is inferred automatically from
+the location. Finally, when the user is prompted for the third
+and final piece of information at login time in order to generate
+the correct psuedo random number. I call this a deterministic
+pseudo random number (DPRN).
+
+The DPRN is now used to select characters from a pre-defined
+alphabet. The result is a hard-to-guess domain specific password,
+and the only way to crack it is to obtain all three pieces of
+information, two of them a secret (known only by you), or to
+find a hash collision.
+
+## Looking back
 The original RndPhrase implementation is a simple cross browser
 plugin which listens on password fields and activates when an `@`
 is typed as the first character. When the field's change event
@@ -41,79 +71,94 @@ The master password is stored in the plugin configuration and
 the context is gathered from the domain of the website where
 the form is presented.
 
-This is all fine and dandy and it does provide some nice benefits.
+There is also a web user interface available at http://rndphrase.appspot.com
+which provides the ability to generate the password when not
+in your own browser.
 
-* I do not have the issue of data lying around waiting to be accidentally deleted or hacked.
-* I can always generate my passwords, anywhere on any computer
-(provided there is internet access or I have an offline copy).
-* It is open source, and the code is small enough and simple enough
-to read and understand.
+The unadressed issues I mentioned earlier are:
 
-However, there are also a series of shortcomings to the implementation.
-
-* Passwords only consist of alphanumeric characters in lowercase.
+* Passwords only consist of lower case alphanumeric characters
+  and is not configurable.
+* It is not possible to specify constraints such as a minimum/maximum
+  amount of characters by specific types.
+* Although almost insignificant, there is a selection bias.
+* It is not possible to configure the hashing algorithm.
 * The password generation method is not reusable, and consists of
-a mixture of javascript and make files.
+  a mixture of javascript and make files.
 * You can not configure password rules for a specific websites.
-* There's some ad-hoc domain checking method from a hardcoded
-file. Furthermore it only supports fully qualified top level
-domain names ignoring sub-domains etc.
-* The easy to remember password gets typed directly into the DOM
-of the website which makes it possible to sniff by a malicious
-site.
-* It does not work well Websites that require you to change passwords periodically.
-
+* Domain validation uses a frequently outdated file but requiries
+  manual updating.
+* The easy-to-remember password gets typed directly into the DOM
+  of the website which makes it exposed.
+* Websites requiring special charactes and/or frequent changes
+  are a hassle.
 
 ## Improving RndPhrase
+Now, some of these issues are user interface related whilst
+others relate directly to the RndPhrase generation algorithm.
+
+In order to stick to the point and keep focus, I will only address
+the issues relating to the latter. I will cover the user interface
+changes in another blogpost where I introduce in detail the
+improved design of browser plugins.
+
+Some of the functionality I describe hereunder is already implemented,
+some is still a work in progress, see
+https://rlindsgaard.github.io/2016/01/29/rndphrase-roadmap/ for
+a status.
+
+
+I am going to start out easy with some of the non-technical
+design changes, and then move over to the more computer sciency
+parts where I delve into the inner workings of the algorithm.
+
 ### Making Code Modular
-The project has been separated into several autonomous projects
-on github.
-The password generating code has been put into a stand alone library
-module and can be used as a regular node module
-(https://github.com/RndPhrase/RndPhrase.js.git).
+There are several reasons to do this. First of all, having
+a module makes it possible to provide an interface such that
+it is easier to use in different implementations.
+Furthermore, it separates functionality and user interface.
 
-There is a webbased user interface which uses the library module
-and serves a page with a form to generate RndPhrases (https://rndphra.se).
+To use RndPhrase one only needs the library code available at
+https://github.com/RndPhrase/RndPhrase.js.git or
+https://www.npmjs.com/package/rndphrase.
 
-Browser plugins will also be separated into one for each plugin
-implementation. Currently there is only proof of concept code
-for a Firefox plugin.
+The current plans are to develop and support the library,
+browser plugins for Firefox and Chrome, and a web user interface
+available at http://rndphra.se.
 
-### Changing the PRNG
-There are several reasons that motivates a change of the underlying
-hash algorithm which is used to simulate the pseudo random number
-generator. I call the product of a hash a deterministic random
-number (DRN).
+The projects are separated in different repositories to keep
+unnecessary code to a minimum.
 
+### Changing the DPRN
 There is now a W3C standard for crypto libraries built into
-the webbrowser, and there is no reason not to make use of that.
-Cubehash is not part of the API, so the default hash algorithm
-of RndPhrase Improved is instead PBKDF2 as it supports
-providing rounds of computation, it is also used and known widely
-and hopefully more trusted than some obscure algorithm.
+the webbrowser. It does not make sense to rely on a custom implementation
+of a hashing algorithm that also needs to be maintained, when
+it can be avoided.
+Cubehash is not part of the standardized API, so the default hash
+algorithm needed to change. For this PBKDF2 is the best fit.
+As it is also a well known hashing algorithm, it will hopefully
+also make it more trustworthy.
 
-However, the user (or developer) is not necessarily stuck with
-this choice, as the algorithm can be changed by supplying a wrapper
-function which imports requirements and takes three arguments
-(message, salt, rounds).
+The DPRN functionality is implemented in a modular fashion to
+support usage in systems that does not adhere to the W3C standard,
+such as nodejs. Making the library independent of the hashing
+algorithm also makes it possible to provide support for other
+hashing algorithms (suchas legacy support with cubehash).
 
-### Event Based RndPhrase
+### Event Based/Asynchronous RndPhrase Generation
 Generating the hash with PBKDF2 requires some computation. It
 makes sense to use the asynchronous version in order to not block
 all threads whilst doing the computations.
 
- computing and
-The design changes to the browser plugins, which are detailed in
-full later, makes it beneficial to make the entire code work
-asynchronously.
-PBKDF2 works asynchronously, so it makes senIn order to not block the browser whilst computing the RndPhrase
-the
-
+The original RndPhrase implementation featured a synchronous
+hash function. However, although the W3C crypto API standard
+provides support for synchronous methods, it still blocks the
+browser. Also, event based functionality are really
+the correct way to do things in Javascript, using callbacks instead
+of return values.
 
 ## Better Password Generation
-If you made it this far I congratulate you. You have arrived to
-ground zero, this is here the shit gets real and we're gonna go
-Computer Science on this mother. I really wanted to improve RndPhrase
+I really wanted to improve RndPhrase
 such that the shortcomings I mentioned in the introduction would
 be mere memories. Adding versioning was a step up the ladder,
 and in theory, it would be enough to add capital letters as well
@@ -231,12 +276,3 @@ The important (and interesting) part happens when a character has been selected.
 
 What happens is, that if a certain character type has been detected `max` times, the type is removed altogether from the alphabet. Furthermore the variables used to decide the number of bits to use when creating the next pseudo random number is recalulcated based on the new alphabet.
 Otherwise the `charType` is simply recorded as being used.
-
-## Work in progress
-### Improved Plugin Design
-Now, let's take a look at the design changes to the plugin. With the old plugin implementation, I had three major issues. The most severe one was that which I mentioned in the introduction, that it is possible for a malicious site to sniff the password as it is entered into the DOM. The second issue is that the seed is stored stored in the browser as a preference option. This is not the worst place ever, especially as the password is hashed before it is saved. However, if anyone were to "borrow" my browser, they will have access to the seed without having to knowing it. Instead I want, at least an option, to store the seed only for the current session.
-Finally, I find it annoying that the domain part needs to resolve to an actual domain. I may want to RndPhrase for things that does not have a fully qualified domain name, and I may also want to enter specific information as a path part. This will come in handy for instance when having several users on one domain sharing seed and password.
-
-###
-
-## Security discussion
