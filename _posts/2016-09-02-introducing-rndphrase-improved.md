@@ -222,6 +222,7 @@ is re-iterated with one more round of hashing.
     }
 
 ## Design Discussion
+
 ### Alphabet Abstraction
 So, why are we even using alphabets in the first place? Ideally we only need
 to produce a large hash and in itself it would contain enough entropy to make
