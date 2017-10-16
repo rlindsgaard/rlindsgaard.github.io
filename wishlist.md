@@ -1,5 +1,5 @@
 ---
-title: Ønskeliste
+title: Wishlist
 ---
 
 ## Tøj
