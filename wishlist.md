@@ -4,7 +4,7 @@ title: Wishlist
 
 This page is for close friends and relatives. You're welcome to take a look anyway.
 
-Last update: 2017-10-28
+Last update: 2017-11-06
 
 ## Tøj
 - Bergans Soleie boxershorts i uld, herre, str. S
@@ -32,15 +32,13 @@ Last update: 2017-10-28
 
 ## Hjemmet
 - Philips Wake-up Light HF3500/01, 499,- <http://www.elgiganten.dk/product/personlig-pleje-skonhed-og-valvare/helse-pleje/HF3500/philips-wake-up-light-hf3500-01>
-- Scent diffuser til badeværelse
-- Stor Santoku kniv m. luftskær i ordentligt stål
-- Moleskine adressebog <https://store.moleskine.com/usa/en-us/notebooks/address-books/addressbook/p106>
+- Scent diffuser til badeværelse, Skandinavisk Ö <https://www.illumsbolighus.com/shop/him-her/personal-care/o-scent-diffuser--200-ml>
+- Stor Santoku kniv m. luftskær i ordentligt stål e.g. <http://www.zwillingonline.com/16908181.html>
 - Moleskine Notebook/Journals
 - Champignonkniv m. skede <https://www.hwl.dk/da/product/knive-og-strygestaal/champignonkniv->
 
 ## Bøger (fysiske>
 - Danmarks Træer og buske, Peter Friis Møller & Henrik Staun, 285,- <https://www.saxo.com/dk/danmarks-traeer-og-buske_henrik-staun_indbundet_9788793159112>
-- Vegansk velvære, Mia Sommer, 260,95 <http://www.gucca.dk/vegansk-velvaere-bog-p339628>
 - Grønskolling, Johanne Mosgaard, 190,- <http://www.gucca.dk/groenskolling-bog-p356568>
 - The Anarchist's Tool Chest, $46 <https://lostartpress.com/collections/books/products/the-anarchists-tool-chest>
 - The Essential Woodworker, $29 <https://lostartpress.com/collections/books/products/the-essential-woodworker>
