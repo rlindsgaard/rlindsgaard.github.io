@@ -8,7 +8,6 @@ Last update: 2017-11-06
 
 ## Tøj
 - Bergans Soleie boxershorts i uld, herre, str. S
-- Bukser til trek, Kühl Rydr, Str. 30", Længde short/30", 999,- <https://www.spejdersport.dk/kuhl-rydr-dark-khaki-short-30-bukser-herre.aspx>
 - Devold breeze t-shirt eller Icebreaker str. S, hvid <https://www.spejdersport.dk/devold-breeze-t-shirt-herre-white.aspx>
 - Aclima Lightwool Speed Shirt SS Men, str. S, <https://www.fjeldogfritid.dk/aclima-lightwool-t-shirt-herre.aspx>
 - Langærmet uldundertrøje "grandad" <https://www.fjeldogfritid.dk/aclima-warmwool-granddad-shirt.aspx> eller Bergans Soleie trøje <https://www.spejdersport.dk/bergans-soleie-shirt-greystriped-herre.aspx>, str. S.
