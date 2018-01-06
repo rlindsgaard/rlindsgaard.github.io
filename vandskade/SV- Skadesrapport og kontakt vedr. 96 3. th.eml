@@ -1,0 +1,170 @@
+Return-Path: <lp_e_aps@yahoo.dk>
+Delivered-To: rel@zx.dk
+Received: from mail.tyknet.dk
+	by mail.tyknet.dk (Dovecot) with LMTP id cCU1IFxyCloRxQAAHsVLpg
+	for <rel@zx.dk>; Tue, 14 Nov 2017 04:34:36 +0000
+Received: from sonic309-26.consmr.mail.ir2.yahoo.com (sonic309-26.consmr.mail.ir2.yahoo.com [77.238.179.84])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by mail.tyknet.dk (Postfix) with ESMTPS id F40D7B947F0
+	for <rel@zx.dk>; Tue, 14 Nov 2017 04:34:35 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.10.3 mail.tyknet.dk F40D7B947F0
+Authentication-Results: mail.tyknet.dk;
+	dkim=pass (2048-bit key; unprotected) header.d=yahoo.dk header.i=@yahoo.dk header.b=Z+/emX4e
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.dk; s=s2048; t=1510634070; bh=wmTAE2SF8gezz122gL3LXLopZ4iBQTImcOPnoR7Ay10=; h=Date:From:Reply-To:To:Subject:References:From:Subject; b=Z+/emX4eyIF6R5lPF7Ps4yxOSlA5TriL50/1ukeberWhmmop32ddS/ZHhtMzdaT7x+1zGCtvG8dmBfrbdkfEWaToUcMqX8vABoubPCwJyC77T8/9J6dJ2FIYp5FxigwFUGhvBNARqgPahJcD1KYfApb4ET8fY1a55tAJdjNeUQ7yMmcSgTtDFysMiujUzFtVge/e7L82sGq4u6VajtN3dshQjh2YT7u20haTHSEUO4SQKU23XeQLthqvuVmfMVHOuXha1/yCtcKzjlPoBOmidWTzHndl+u81SYCcxnQr6LrrLplDmuKTB5SmQgYZvJ5eqKNMIoN35/O+GFruDPhPzg==
+X-YMail-OSG: zrSWHcoVM1m9XhqZXxB.n4oUneEEP7nUqResfijEpfPddduPD65SeK_DZk5i5mv
+ CgWcTFiiVybkUHZz9adGhnSzLNqEgqV.WMxTloxysfpUKmQUrv7jvs8TqiQY5wHF2k56Y2p6ouZi
+ qTX4O662slurok3tlJN0J.34InxHrRvKWv8Tg0p3MheOJlZnQ9hUqdeXx21wNVTMuQ8F5Ko95psf
+ RSrQimlrafYUUcwYxlnL04Tin6.C.O2EMNy0OWPKOi0ZMQsmvTvhCgVbVX3Kn7GqxqqVZt0Ieotc
+ lNBDEnhJYtpavlkJpFZiyR3lflhNdU.7tOsPkhgO3SEBqKJWbTG7.g7_jixmK77hMxtWiMRfirw6
+ _zrHr45Cswrgs37RZ0_J8JkZw5sh3nXvJALBv888dPzgRbqVoMlAJsx6R.0u1dYYep0K2xKhk958
+ 0YPTD3azxCfZCccF47QJnh.3EF2iEtMLv4nHgEZdB0cFJUfoOPOF6kCQKCktuING5J.xPzAFi7Ef
+ .uOMsRc8heg--
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic309.consmr.mail.ir2.yahoo.com with HTTP; Tue, 14 Nov 2017 04:34:30 +0000
+Date: Tue, 14 Nov 2017 04:34:28 +0000 (UTC)
+From: Lars Pii <lp_e_aps@yahoo.dk>
+Reply-To: Lars Pii <lp_e_aps@yahoo.dk>
+To: "rel@zx.dk" <rel@zx.dk>
+Message-ID: <1513945777.2808224.1510634068245@mail.yahoo.com>
+Subject: SV: Skadesrapport og kontakt vedr. 96 3. th
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2808223_1378342720.1510634068243"
+References: <1513945777.2808224.1510634068245.ref@mail.yahoo.com>
+X-Mailer: WebService/1.1.10940 YahooMailNeo Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+
+------=_Part_2808223_1378342720.1510634068243
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hej RonniJeg forst=C3=A5r godt din frustration, s=C3=A5dan er det dsv med f=
+orsikrings sager- det tager 100 =C3=A5r.
+Det er ikke ok. at Dansk skadesservice kommer uanmeldtn=C3=A5 men skadesser=
+vice har lavet en fugt rapport, den er sendt til forsikringen medio uge 45.=
+Det er s=C3=A5 forsikringen der afg=C3=B8r, sagens videre forl=C3=B8b- der =
+sker ikke rigtig noget f=C3=B8r, de har kommet med en afg=C3=B8relse.
+Mht indbo: hvad i har af krav til =C3=B8delagt indbo, er p=C3=A5 jeres egen=
+ indbo forsikring- s=C3=A5 dem m=C3=A5 i kontakte.skade p=C3=A5 bygning: er=
+ p=C3=A5 ejendommens forsikring Gjensidige forsikringA/B Ny Haraldsgade, po=
+lice 9576566 - Skade nr. 9576566,10
+mvh Lars
+
+
+
+    Den 16:06 mandag den 13. november 2017 skrev "rel@zx.dk" <rel@zx.dk>:
+=20
+
+ K=C3=A6re Vicev=C3=A6rt
+
+Jeg skriver til dig i h=C3=A5b om at du kan v=C3=A6re behj=C3=A6lpelig. Vi =
+har som=20
+bekendt f=C3=A5et en vandskade i k=C3=B8kkenet p=C3=A5 haraldsgade 96 3. th=
+.
+I mandags kom skadesservice forbi uanmeldt, til alt held var vores=20
+for=C3=A6ldre hjemme, og lavede nogle m=C3=A5linger.
+
+Vi har dog intet h=C3=B8rt fra dem udover dette bes=C3=B8g. Jeg har f=C3=A5=
+et en=20
+mundtlig overlevering af hvad der blev diskuteret med svigerfar. Men jeg=20
+har ingen data at sende til mit eget forsikringsselskab, jeg ved ikke=20
+engang om jeg skal kontakte dem i forbindelse med indbo, eller om det er=20
+d=C3=A6kket af ejendommens forsikring. Vi kunne ogs=C3=A5 godt t=C3=A6nke o=
+s noget=20
+information ift. hvorn=C3=A5r de her ting skal fikses, af hvem og i hvilket=
+=20
+omfang.
+
+Har du eventuelt et nummer eller lignende til skadesservice eller=20
+kurator, eller g=C3=A5r dette gennem dig/bestyrelsen?
+
+Mvh
+Ronni Elken Lindsgaard
+
+
+  =20
+------=_Part_2808223_1378342720.1510634068243
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><div style=3D"color:#000; background-color:#fff; f=
+ont-family:verdana, helvetica, sans-serif;font-size:16px"><div id=3D"yiv163=
+2542999"><div id=3D"yui_3_16_0_ym19_1_1510633318757_14036"><div style=3D"co=
+lor:#000;background-color:#fff;font-family:verdana, helvetica, sans-serif;f=
+ont-size:16px;" id=3D"yui_3_16_0_ym19_1_1510633318757_14035" dir=3D"ltr"><d=
+iv id=3D"yiv1632542999yui_3_16_0_ym19_1_1510633318757_8795"><span>Hej Ronni=
+</span></div><div id=3D"yiv1632542999yui_3_16_0_ym19_1_1510633318757_8756">=
+<span id=3D"yiv1632542999yui_3_16_0_ym19_1_1510633318757_8755">Jeg forst=C3=
+=A5r godt din frustration, s=C3=A5dan er det dsv med forsikrings sager- det=
+ tager 100 =C3=A5r.</span></div><div id=3D"yiv1632542999yui_3_16_0_ym19_1_1=
+510633318757_8756"><span><br clear=3D"none"></span></div><div dir=3D"ltr" i=
+d=3D"yiv1632542999yui_3_16_0_ym19_1_1510633318757_8756"><span id=3D"yiv1632=
+542999yui_3_16_0_ym19_1_1510633318757_8831">Det er ikke ok. at Dansk skades=
+service kommer uanmeldt</span></div><div dir=3D"ltr" id=3D"yiv1632542999yui=
+_3_16_0_ym19_1_1510633318757_8756"><span id=3D"yiv1632542999yui_3_16_0_ym19=
+_1_1510633318757_8834">n=C3=A5 men skadesservice har lavet en fugt rapport,=
+ den er sendt til forsikringen medio uge 45.</span></div><div dir=3D"ltr" i=
+d=3D"yiv1632542999yui_3_16_0_ym19_1_1510633318757_8756"><span id=3D"yiv1632=
+542999yui_3_16_0_ym19_1_1510633318757_9051">Det er s=C3=A5 forsikringen der=
+ afg=C3=B8r, sagens videre forl=C3=B8b- der sker ikke rigtig noget f=C3=B8r=
+, de har kommet med en afg=C3=B8relse.</span></div><div dir=3D"ltr" id=3D"y=
+iv1632542999yui_3_16_0_ym19_1_1510633318757_8756"><span><br clear=3D"none">=
+</span></div><div dir=3D"ltr" id=3D"yiv1632542999yui_3_16_0_ym19_1_15106333=
+18757_8756"><span id=3D"yui_3_16_0_ym19_1_1510633318757_14037">Mht indbo: h=
+vad i har af krav til =C3=B8delagt indbo, er p=C3=A5 jeres egen indbo forsi=
+kring- s=C3=A5 dem m=C3=A5 i kontakte.</span></div><div dir=3D"ltr" id=3D"y=
+iv1632542999yui_3_16_0_ym19_1_1510633318757_8756"><span id=3D"yui_3_16_0_ym=
+19_1_1510633318757_14038">skade p=C3=A5 bygning: er p=C3=A5 ejendommens for=
+sikring Gjensidige forsikring</span></div><div dir=3D"ltr" id=3D"yiv1632542=
+999yui_3_16_0_ym19_1_1510633318757_8756"><span style=3D"font-family: &quot;=
+Helvetica Neue&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, &quot;Lucida =
+Grande&quot;, sans-serif; font-size: 14.6667px;" id=3D"yui_3_16_0_ym19_1_15=
+10633318757_14102">A/B Ny Haraldsgade, police 9576566 - Skade nr. 9576566,1=
+0</span></div><div dir=3D"ltr" id=3D"yiv1632542999yui_3_16_0_ym19_1_1510633=
+318757_8756"><br></div><div dir=3D"ltr" id=3D"yiv1632542999yui_3_16_0_ym19_=
+1_1510633318757_8756">mvh Lars<br style=3D"font-family: &quot;Helvetica Neu=
+e&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, &quot;Lucida Grande&quot;,=
+ sans-serif; font-size: 14.6667px;" id=3D"yui_3_16_0_ym19_1_1510633318757_1=
+4103"><span><br></span></div><div class=3D"qtdSeparateBR" id=3D"yui_3_16_0_=
+ym19_1_1510633318757_14371"><br><br></div><div class=3D"yiv1632542999yqt559=
+7870868" id=3D"yiv1632542999yqt95826"></div></div></div></div><div class=3D=
+".yiv1632542999yahoo_quoted" id=3D"yui_3_16_0_ym19_1_1510633318757_14340"> =
+<div style=3D"font-family:verdana, helvetica, sans-serif;font-size:16px;" i=
+d=3D"yui_3_16_0_ym19_1_1510633318757_14339"> <div style=3D"font-family:Helv=
+eticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font=
+-size:16px;" id=3D"yui_3_16_0_ym19_1_1510633318757_14338"> <div dir=3D"ltr"=
+ id=3D"yui_3_16_0_ym19_1_1510633318757_14370"><font size=3D"2" face=3D"Aria=
+l" id=3D"yui_3_16_0_ym19_1_1510633318757_14391"> Den 16:06 mandag den 13. n=
+ovember 2017 skrev "rel@zx.dk" &lt;rel@zx.dk&gt;:<br clear=3D"none"></font>=
+</div>  <br clear=3D"none"><br clear=3D"none"> <div class=3D"yiv1632542999y=
+_msg_container" id=3D"yui_3_16_0_ym19_1_1510633318757_14337"><div dir=3D"lt=
+r" id=3D"yui_3_16_0_ym19_1_1510633318757_14360">K=C3=A6re Vicev=C3=A6rt<br =
+clear=3D"none"></div><div dir=3D"ltr" id=3D"yui_3_16_0_ym19_1_1510633318757=
+_14359"><br clear=3D"none"></div><div dir=3D"ltr" id=3D"yui_3_16_0_ym19_1_1=
+510633318757_14358">Jeg skriver til dig i h=C3=A5b om at du kan v=C3=A6re b=
+ehj=C3=A6lpelig. Vi har som <br clear=3D"none"></div><div dir=3D"ltr" id=3D=
+"yui_3_16_0_ym19_1_1510633318757_14369">bekendt f=C3=A5et en vandskade i k=
+=C3=B8kkenet p=C3=A5 haraldsgade 96 3. th.<br clear=3D"none"></div><div dir=
+=3D"ltr" id=3D"yui_3_16_0_ym19_1_1510633318757_14357">I mandags kom skadess=
+ervice forbi uanmeldt, til alt held var vores <br clear=3D"none"></div><div=
+ dir=3D"ltr" id=3D"yui_3_16_0_ym19_1_1510633318757_14356">for=C3=A6ldre hje=
+mme, og lavede nogle m=C3=A5linger.<br clear=3D"none"></div><div dir=3D"ltr=
+" id=3D"yui_3_16_0_ym19_1_1510633318757_14355"><br clear=3D"none"></div><di=
+v dir=3D"ltr" id=3D"yui_3_16_0_ym19_1_1510633318757_14336">Vi har dog intet=
+ h=C3=B8rt fra dem udover dette bes=C3=B8g. Jeg har f=C3=A5et en <br clear=
+=3D"none"></div><div dir=3D"ltr">mundtlig overlevering af hvad der blev dis=
+kuteret med svigerfar. Men jeg <br clear=3D"none"></div><div dir=3D"ltr">ha=
+r ingen data at sende til mit eget forsikringsselskab, jeg ved ikke <br cle=
+ar=3D"none"></div><div dir=3D"ltr">engang om jeg skal kontakte dem i forbin=
+delse med indbo, eller om det er <br clear=3D"none"></div><div dir=3D"ltr">=
+d=C3=A6kket af ejendommens forsikring. Vi kunne ogs=C3=A5 godt t=C3=A6nke o=
+s noget <br clear=3D"none"></div><div dir=3D"ltr" id=3D"yui_3_16_0_ym19_1_1=
+510633318757_14365">information ift. hvorn=C3=A5r de her ting skal fikses, =
+af hvem og i hvilket <br clear=3D"none"></div><div dir=3D"ltr">omfang.<br c=
+lear=3D"none"></div><div dir=3D"ltr"><br clear=3D"none"></div><div dir=3D"l=
+tr">Har du eventuelt et nummer eller lignende til skadesservice eller <br c=
+lear=3D"none"></div><div dir=3D"ltr">kurator, eller g=C3=A5r dette gennem d=
+ig/bestyrelsen?<br clear=3D"none"></div><div dir=3D"ltr"><br clear=3D"none"=
+></div><div dir=3D"ltr">Mvh<br clear=3D"none"></div><div dir=3D"ltr">Ronni =
+Elken Lindsgaard<br clear=3D"none"></div><br clear=3D"none"><br clear=3D"no=
+ne"></div>  </div> </div>  </div></div></body></html>
+------=_Part_2808223_1378342720.1510634068243--

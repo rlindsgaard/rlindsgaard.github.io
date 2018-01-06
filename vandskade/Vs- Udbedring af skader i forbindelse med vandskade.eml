@@ -1,0 +1,439 @@
+Return-Path: <haraldsgade102@hotmail.com>
+Delivered-To: rel@zx.dk
+Received: from mail.tyknet.dk
+	by mail.tyknet.dk (Dovecot) with LMTP id rI7mFb1JMloaBwEAHsVLpg
+	for <rel@zx.dk>; Thu, 14 Dec 2017 09:51:57 +0000
+Received: from EUR01-VE1-obe.outbound.protection.outlook.com (mail-oln040092066073.outbound.protection.outlook.com [40.92.66.73])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mail.tyknet.dk (Postfix) with ESMTPS id CFB99BA23A1
+	for <rel@zx.dk>; Thu, 14 Dec 2017 09:51:56 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.10.3 mail.tyknet.dk CFB99BA23A1
+Authentication-Results: mail.tyknet.dk;
+	dkim=pass (2048-bit key; unprotected) header.d=hotmail.com header.i=@hotmail.com header.b=elR+fEY0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hotmail.com;
+ s=selector1; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version;
+ bh=wKsAR8HspTjNeW9mOS2wK+ohGz63jW9XYBDF24o4P78=;
+ b=elR+fEY04lh7Jz2V+Eduln/9g2Ze/ux5UnzaziE8yqgVnUEWSMLYYDevbGnUqnk1APjGUjg4oUUMniWrZQU6T41gQu6omdToiWKfDIx1RyWck0/ZMBHTzBSAr11FIE9BFkbP0ri+LL29vdO2E76XxUx4VrnTQlPAzK65Ad5oKx7Xd3WbRGBcOg4Qj/xjIDMcak38nynqTNx4l9RrWLLwL87h/cZl+m8NLXa/cGRhC4GTxbYL4S8U4c2i3a5N4aGaCfJSpB84SkJ3J93fPUnwKxWjRW0E4FKOU/6BwhYyVi2jS3atSGF5XqGLgWvnUIbtdI+5e85epZmZkVGm7WXG4g==
+Received: from HE1EUR01FT037.eop-EUR01.prod.protection.outlook.com
+ (10.152.0.57) by HE1EUR01HT013.eop-EUR01.prod.protection.outlook.com
+ (10.152.1.183) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384) id 15.20.302.6; Thu, 14
+ Dec 2017 09:51:54 +0000
+Received: from HE1P190MB0043.EURP190.PROD.OUTLOOK.COM (10.152.0.53) by
+ HE1EUR01FT037.mail.protection.outlook.com (10.152.1.83) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.20.302.6 via Frontend Transport; Thu, 14 Dec 2017 09:51:54 +0000
+Received: from HE1P190MB0043.EURP190.PROD.OUTLOOK.COM
+ ([fe80::60cb:df2d:7c3a:46e6]) by HE1P190MB0043.EURP190.PROD.OUTLOOK.COM
+ ([fe80::60cb:df2d:7c3a:46e6%13]) with mapi id 15.20.0282.012; Thu, 14 Dec
+ 2017 09:51:54 +0000
+From: Connie Hansen <haraldsgade102@hotmail.com>
+To: Nyharaldsgade bestyrelsen <bestyrelsen@nyharaldsgade.dk>,
+	=?iso-8859-1?Q?Lars_vicev=E6rt?= <lp_e_aps@yahoo.dk>, "rel@zx.dk" <rel@zx.dk>
+Subject: Vs: Udbedring af skader i forbindelse med vandskade
+Thread-Topic: Udbedring af skader i forbindelse med vandskade
+Thread-Index: AQHTdJeJyWQ28Zze1UWgnOxFFvkCAaNCh5A2
+Date: Thu, 14 Dec 2017 09:51:54 +0000
+Message-ID: <HE1P190MB0043044AB88B6282015725D19A0A0@HE1P190MB0043.EURP190.PROD.OUTLOOK.COM>
+References: <1384617552.7612309.1513227232364.ref@mail.yahoo.com>,<1384617552.7612309.1513227232364@mail.yahoo.com>
+In-Reply-To: <1384617552.7612309.1513227232364@mail.yahoo.com>
+Accept-Language: da-DK, en-US
+Content-Language: da-DK
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-incomingtopheadermarker: OriginalChecksum:FE44AFAB3062B7A627D3EFC37AFE849E4134EF323C5D7C99EA33774A50EE6E72;UpperCasedChecksum:7B72365A634DA8F9DDA7195B239FE8F9E36F371B6DF24A49477A62DDC428F59D;SizeAsReceived:7187;Count:46
+x-ms-exchange-messagesentrepresentingtype: 1
+x-tmn: [g3k7+YAlomX0BGuqh8x1NyQUlTCoH70c]
+x-ms-publictraffictype: Email
+x-microsoft-exchange-diagnostics: 1;HE1EUR01HT013;6:zfj0Grdd5oPx3w9y1Tvfm40xN3go/YNyatIyVLPDbcMhb0/1RPQxOUJ6ZPloTYiR+pU5Vgmbe/tJgr5tVgH98pYrJUumgi5GGH7i9c0Y+NCY+67GpFAXTLJvXxmi4mmUq0WxuMSOMim7AEKapVpZNiHSMbAGTl0KbJuvQOU5uvya1+fg8j6g8MZEjcp81+wx+SMBaPJ4dhwzYdbxXJwwOT8xL+7h2zWGh8Q9HTCJUGFpe/bsmIRU2waXpEY5AEZG/ts0Nvqz0dItfD6IKvfOSt274WNbi4enfXQrlK56DAQbxWbsqZ5nVidSeJqJx0eKarLOYgi5wxdufbtpvbsCuTb6yuDNOFegt351834m6Dc=;5:vhZhTOLNDOsSN5Xg8AStLZotJcpYI79I+2l7Dv7cKWrg/FxJXs3myy3zC5hMrBNjcIsisnovRIF+SBmzGY2zWIdNZRhhS9SUBA6AcLYYZiUTGR9C1zJk8Lo6AEmOw49Dx3+4aBtubfLjpvU6ALm/odVr9LqKMFqgmwE/ERG07KM=;24:vYfESf+Suw8C45nEWbICGHm5F0gUyU9NwdWEHDYHqudDL31V5w3mlJo5wfycBEQpkbCh8ikw8oE3MzF1tOrkavXNVPqb8LpQ3D0swb9vsKI=;7:d63oXbEh+3luw70lObHblxr4HLSSe4cBflz0yLYjenUaMVDRbAkkCsK3zpqtkkRzQH6nqv8z/irNWvEY6XrCy/SdMjIoGJz9sOJ8KQs7MswWXb0WfBwTiOApal26uFSr+FqU0Hw7ZyYHlmaGfgcPb3gcdTu/yzJsHf43KZpgvqqHCJUjRBrSzyXC/Px7x7YcPII2eDuPUqWeZNITUtse5mbAjn3Ty+6WEsXYyiB3NfCaTC74hIJ6veMC+VcwFdjy
+x-incomingheadercount: 46
+x-eopattributedmessage: 0
+x-microsoft-antispam: UriScan:;BCL:0;PCL:0;RULEID:(201702061074)(5061506573)(5061507331)(1603103135)(2017031320274)(2017031324274)(2017031323274)(2017031322404)(1601125374)(1603101448)(1701031045);SRVR:HE1EUR01HT013;
+x-ms-traffictypediagnostic: HE1EUR01HT013:
+x-ms-office365-filtering-correlation-id: d702f8d7-e716-4b2b-0be8-08d542d84eda
+x-exchange-antispam-report-cfa-test: BCL:0;PCL:0;RULEID:(444000031);SRVR:HE1EUR01HT013;BCL:0;PCL:0;RULEID:(100000803101)(100110400095);SRVR:HE1EUR01HT013;
+x-forefront-prvs: 05214FD68E
+x-forefront-antispam-report: SFV:NSPM;SFS:(7070007)(98901004);DIR:OUT;SFP:1901;SCL:1;SRVR:HE1EUR01HT013;H:HE1P190MB0043.EURP190.PROD.OUTLOOK.COM;FPR:;SPF:None;LANG:;
+spamdiagnosticoutput: 1:99
+spamdiagnosticmetadata: NSPM
+Content-Type: multipart/alternative;
+	boundary="_000_HE1P190MB0043044AB88B6282015725D19A0A0HE1P190MB0043EURP_"
+MIME-Version: 1.0
+X-OriginatorOrg: hotmail.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: d702f8d7-e716-4b2b-0be8-08d542d84eda
+X-MS-Exchange-CrossTenant-originalarrivaltime: 14 Dec 2017 09:51:54.4668
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Internet
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: HE1EUR01HT013
+
+--_000_HE1P190MB0043044AB88B6282015725D19A0A0HE1P190MB0043EURP_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Hej Ronni,
+
+
+I bestyrelsen har vi for l=E6nge siden overladt det til Lars at k=F8re sage=
+rne, n=E5r det handler om vandskader. Han er mest p=E5 ejendommen i hverdag=
+ene, n=E5r vi andre er p=E5 arbejde, og han har det gode overblik i forhold=
+ til h=E5ndv=E6rk og skader, hvorfor det er naturligt, at det er Lars, som =
+du har haft kontakt med.
+
+
+Jeg er lidt ked af din indstilling i din mail i forhold til at f=E5 ryddet =
+op efter vandskaden. Det er ikke sundt for dig at bo i en lejlighed, hvor d=
+er enten allerede er udviklet skimmelsvamp eller der snart kan komme det. D=
+et er yderst beklageligt, at den vandskade er sket, det ville jeg =F8nske, =
+at vi kunne have undg=E5et, da det ved vandskader g=E5r ud over mange andre=
+ end den andelshaver, som for=E5rsager alt rodet.
+
+
+Da du ikke selv har haft skyld i vandskaden, s=E5 er det, som Lars skriver,=
+ forsikringen, som d=E6kker oprydningsarbejdet.
+
+Det er en langsommelig og besv=E6rlig proces, det er der ingen tvivl om. Me=
+n det er rigtig vigtigt, at vi f=E5r ryddet op hurtigst muligt, og derfor h=
+ar du som andelshaver ogs=E5 pligt til at give adgang til din andel, hvis v=
+i i s=E6rlige situationer som denne har brug for det.
+
+
+Med venlig hilsen
+
+
+Connie Hansen
+
+
+________________________________
+Fra: Lars Pii <lp_e_aps@yahoo.dk>
+Sendt: 14. december 2017 05:53
+Til: rel@zx.dk; bestyrelsen@nyharaldsgade.dk
+Emne: SV: Udbedring af skader i forbindelse med vandskade
+
+Hej Ronni
+som jeg skrev til dig i mail a=B4 14-11-2017
+s=E5 tager forsikrings sager 100 =E5r.
+
+forsikringen har forel=F8big godkendt, demontering af diverse fugtskadede b=
+ygnings dele (det er s=E5 det Skadesservice,  har bedt om adgang til nu).
+Dette er n=F8dvendigt f=F8rst, for at der efterflg kan gives tilbud p=E5 re=
+tlabering, dette skal forsikringen ogs=E5 godkende tilbuddet alts=E5- s=E5 =
+det er en langsomlig aff=E6re.
+
+Der er ingen der kan bestille arbejde p=E5 din regning- anden dig selv
+det der er sket ind til nu og demontering af bygningsdele- betaler forsikri=
+ngen.
+
+Det er derfor n=F8dvendig at du giver skadesservice adgang.
+
+mvh Lars
+
+
+Den 15:58 onsdag den 13. december 2017 skrev "rel@zx.dk" <rel@zx.dk>:
+
+
+K=E6re Ejendomsbestyrelse (og vicev=E6rt)
+
+Jeg bor Haraldsgade 96 3. th (Lejem=E5l 74) hvor vi i slutningen af
+oktober m=E5ned fik vandsskade i k=F8kkenet.
+
+Jeg har i dag modtaget et opkald fra skadesservice om at skadesrapporten
+er godkendt og de vil have adgang til min bolig fra i morgen tidlig
+til at udbedre skaderne.
+Jeg har meddelt dem at de ikke kan f=E5 adgang. Han meddelte mig
+personligt
+at i s=E5 fald var jeg selv ansvarlig for v=E6kst af skimmel. Det n=E6gter
+jeg at anderkende. F=F8rst og fremmest fordi sagen har ligget hen
+i op mod 2 m=E5neder, derudover fordi der allerede er synlig v=E6kst af
+skimmel.
+
+Jeg har modtaget ingen information om sagens forl=F8b fra hverken jer
+(bestyrelsen) eller Gjensidige Forsikring som jeg har l=E6rt er
+forsikringsselskabet der benyttes. Dette har jeg l=E6rt efter at
+kontakte vicev=E6rten ift. information.
+
+Jeg er interesseret i at f=E5 udbedret skaderne. Men jeg har ikke i
+sinde at lukke h=E5ndv=E6rkere ind i min ejendom og begynde at rive ting
+fra hinanden uden at have p=E5 skrift hvad det er de skal lave,
+og hvem der skal betale.
+Endvidere har jeg pt. ingen anelse om hvad det rent faktisk er,
+udover at gulv og loft skal rives op. Samt at nogle k=F8kkenskabe
+skal fjernes. Og s=E5 noget med loftet i entr=E9en ogs=E5. - Dette har
+jeg f=E5et fra mundtlig overlevering af en g=E6st som tilf=E6ldigvis var
+i vores lejlighed for at passe vores barn da Skadesservice kommer
+uanmeldt og afhenter affugteren og laver m=E5linger.
+
+I er velkommen til at kontakte mig telefonisk, per email eller personlig
+p=E5 adressen s=E5 vi kan f=E5 udreddet dette her.
+
+Mvh
+Ronni Elken Lindsgaard
+Haraldsgade 96 3. th
+rel@zx.dk<mailto:rel@zx.dk>
++45 31 48 28 60
+
+
+
+--_000_HE1P190MB0043044AB88B6282015725D19A0A0HE1P190MB0043EURP_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"><!-- P {margin-top:0;margi=
+n-bottom:0;} --></style>
+</head>
+<body dir=3D"ltr">
+<div id=3D"divtagdefaultwrapper" style=3D"font-size:12pt;color:#000000;font=
+-family:Calibri,Helvetica,sans-serif;" dir=3D"ltr">
+<p style=3D"margin-top:0;margin-bottom:0">Hej Ronni, <br>
+</p>
+<p style=3D"margin-top:0;margin-bottom:0"><br>
+</p>
+<p style=3D"margin-top:0;margin-bottom:0">I bestyrelsen har vi for l=E6nge =
+siden overladt det til Lars at k=F8re sagerne, n=E5r det handler om vandska=
+der. Han er mest p=E5 ejendommen i hverdagene, n=E5r vi andre er p=E5 arbej=
+de, og han har det gode overblik i forhold til
+ h=E5ndv=E6rk og skader, hvorfor det er naturligt, at det er Lars, som du h=
+ar haft kontakt med.
+<br>
+</p>
+<p style=3D"margin-top:0;margin-bottom:0"><br>
+</p>
+<p style=3D"margin-top:0;margin-bottom:0">Jeg er lidt ked af din indstillin=
+g i din mail i forhold til at f=E5 ryddet op efter vandskaden. Det er ikke =
+sundt for dig at bo i en lejlighed, hvor der enten allerede er udviklet ski=
+mmelsvamp eller der snart kan komme
+ det. Det er yderst beklageligt, at den vandskade er sket, det ville jeg =
+=F8nske, at vi kunne have undg=E5et, da det ved vandskader g=E5r ud over ma=
+nge andre end den andelshaver, som for=E5rsager alt rodet.
+<br>
+</p>
+<p style=3D"margin-top:0;margin-bottom:0"><br>
+</p>
+<p style=3D"margin-top:0;margin-bottom:0">Da du ikke selv har haft skyld i =
+vandskaden, s=E5 er det, som Lars skriver, forsikringen, som d=E6kker opryd=
+ningsarbejdet.
+</p>
+<div><span>Det er en langsommelig og besv=E6rlig proces, det er der ingen t=
+vivl om.</span> Men det er rigtig vigtigt, at vi f=E5r ryddet op hurtigst m=
+uligt, og derfor har du som andelshaver ogs=E5 pligt til at give adgang til=
+ din andel, hvis vi i s=E6rlige situationer
+ som denne har brug for det. <br>
+</div>
+<p></p>
+<p style=3D"margin-top:0;margin-bottom:0"><br>
+</p>
+<div id=3D"Signature">
+<div id=3D"divtagdefaultwrapper" style=3D"font-size: 12pt; color: rgb(0, 0,=
+ 0); background-color: rgb(255, 255, 255); font-family: Calibri, Arial, Hel=
+vetica, sans-serif, &quot;EmojiFont&quot;, &quot;Apple Color Emoji&quot;, &=
+quot;Segoe UI Emoji&quot;, NotoColorEmoji, &quot;Segoe UI Symbol&quot;, &qu=
+ot;Android Emoji&quot;, EmojiSymbols;">
+Med venlig hilsen <br>
+<br>
+<p>Connie Hansen<br>
+</p>
+</div>
+</div>
+<br>
+<br>
+<div style=3D"color: rgb(0, 0, 0);">
+<hr style=3D"display:inline-block;width:98%" tabindex=3D"-1">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font style=3D"font-size:11pt" face=
+=3D"Calibri, sans-serif" color=3D"#000000"><b>Fra:</b> Lars Pii &lt;lp_e_ap=
+s@yahoo.dk&gt;<br>
+<b>Sendt:</b> 14. december 2017 05:53<br>
+<b>Til:</b> rel@zx.dk; bestyrelsen@nyharaldsgade.dk<br>
+<b>Emne:</b> SV: Udbedring af skader i forbindelse med vandskade</font>
+<div>&nbsp;</div>
+</div>
+<div>
+<div style=3D"color:#000; background-color:#fff; font-family:verdana,helvet=
+ica,sans-serif; font-size:16px">
+<div id=3D"x_yiv6893978003">
+<div id=3D"x_yui_3_16_0_ym19_1_1513226363250_15437">
+<div id=3D"x_yui_3_16_0_ym19_1_1513226363250_15436" style=3D"color:#000; ba=
+ckground-color:#fff; font-family:verdana,helvetica,sans-serif; font-size:16=
+px">
+<div id=3D"x_yiv6893978003yui_3_16_0_ym19_1_1513226363250_13394"><span id=
+=3D"x_yui_3_16_0_ym19_1_1513226363250_15646">Hej Ronni</span></div>
+<div dir=3D"ltr" id=3D"x_yiv6893978003yui_3_16_0_ym19_1_1513226363250_13394=
+"><span id=3D"x_yiv6893978003yui_3_16_0_ym19_1_1513226363250_13500">som jeg=
+ skrev til dig i mail a=B4 14-11-2017&nbsp;</span></div>
+<div dir=3D"ltr" id=3D"x_yiv6893978003yui_3_16_0_ym19_1_1513226363250_13394=
+"><span id=3D"x_yiv6893978003yui_3_16_0_ym19_1_1513226363250_13501">s=E5 ta=
+ger forsikrings sager 100 =E5r.</span></div>
+<div dir=3D"ltr" id=3D"x_yiv6893978003yui_3_16_0_ym19_1_1513226363250_13394=
+"><span><br>
+</span></div>
+<div dir=3D"ltr" id=3D"x_yiv6893978003yui_3_16_0_ym19_1_1513226363250_13394=
+"><span id=3D"x_yui_3_16_0_ym19_1_1513226363250_15443">forsikringen har for=
+el=F8big godkendt, demontering af diverse fugtskadede bygnings dele (det er=
+ s=E5 det Skadesservice,&nbsp; har bedt om adgang
+ til nu).</span></div>
+<div dir=3D"ltr" id=3D"x_yiv6893978003yui_3_16_0_ym19_1_1513226363250_13394=
+"><span id=3D"x_yui_3_16_0_ym19_1_1513226363250_15489">Dette er n=F8dvendig=
+t f=F8rst, for at der efterflg kan gives tilbud p=E5 retlabering, dette ska=
+l forsikringen ogs=E5 godkende tilbuddet alts=E5-
+ s=E5 det er en langsomlig aff=E6re.</span></div>
+<div dir=3D"ltr" id=3D"x_yiv6893978003yui_3_16_0_ym19_1_1513226363250_13394=
+"><span><br>
+</span></div>
+<div dir=3D"ltr" id=3D"x_yiv6893978003yui_3_16_0_ym19_1_1513226363250_13394=
+"><span id=3D"x_yui_3_16_0_ym19_1_1513226363250_15600">Der er ingen der kan=
+ bestille arbejde p=E5 din regning- anden dig selv&nbsp;</span></div>
+<div dir=3D"ltr" id=3D"x_yiv6893978003yui_3_16_0_ym19_1_1513226363250_13394=
+"><span id=3D"x_yui_3_16_0_ym19_1_1513226363250_15629">det der er sket ind =
+til nu og demontering af bygningsdele- betaler forsikringen.</span></div>
+<div dir=3D"ltr" id=3D"x_yiv6893978003yui_3_16_0_ym19_1_1513226363250_13394=
+"><span><br>
+</span></div>
+<div dir=3D"ltr" id=3D"x_yiv6893978003yui_3_16_0_ym19_1_1513226363250_13394=
+"><span id=3D"x_yui_3_16_0_ym19_1_1513226363250_22760">Det er derfor n=F8dv=
+endig at du giver skadesservice adgang.</span></div>
+<div dir=3D"ltr" id=3D"x_yiv6893978003yui_3_16_0_ym19_1_1513226363250_13394=
+"><span><br>
+</span></div>
+<div dir=3D"ltr" id=3D"x_yiv6893978003yui_3_16_0_ym19_1_1513226363250_13394=
+"><span>mvh Lars</span></div>
+<div class=3D"x_yiv6893978003qtdSeparateBR" id=3D"x_yui_3_16_0_ym19_1_15132=
+26363250_15438">
+<br clear=3D"none">
+<br clear=3D"none">
+</div>
+<div class=3D"x_yiv6893978003yqt0141593425" id=3D"x_yiv6893978003yqt31280">=
+</div>
+</div>
+</div>
+</div>
+<div class=3D"x_.yiv6893978003yahoo_quoted">
+<div style=3D"font-family:verdana,helvetica,sans-serif; font-size:16px">
+<div style=3D"font-family:HelveticaNeue,Helvetica Neue,Helvetica,Arial,Luci=
+da Grande,sans-serif; font-size:16px">
+<div dir=3D"ltr"><font size=3D"2" face=3D"Arial">Den 15:58 onsdag den 13. d=
+ecember 2017 skrev &quot;rel@zx.dk&quot; &lt;rel@zx.dk&gt;:<br clear=3D"non=
+e">
+</font></div>
+<br clear=3D"none">
+<br clear=3D"none">
+<div class=3D"x_yiv6893978003y_msg_container">
+<div dir=3D"ltr">K=E6re Ejendomsbestyrelse (og vicev=E6rt)<br clear=3D"none=
+">
+</div>
+<div dir=3D"ltr"><br clear=3D"none">
+</div>
+<div dir=3D"ltr">Jeg bor Haraldsgade 96 3. th (Lejem=E5l 74) hvor vi i slut=
+ningen af<br clear=3D"none">
+</div>
+<div dir=3D"ltr">oktober m=E5ned fik vandsskade i k=F8kkenet.<br clear=3D"n=
+one">
+</div>
+<div dir=3D"ltr"><br clear=3D"none">
+</div>
+<div dir=3D"ltr">Jeg har i dag modtaget et opkald fra skadesservice om at s=
+kadesrapporten<br clear=3D"none">
+</div>
+<div dir=3D"ltr">er godkendt og de vil have adgang til min bolig fra i morg=
+en tidlig<br clear=3D"none">
+</div>
+<div dir=3D"ltr">til at udbedre skaderne.<br clear=3D"none">
+</div>
+<div dir=3D"ltr">Jeg har meddelt dem at de ikke kan f=E5 adgang. Han meddel=
+te mig <br clear=3D"none">
+</div>
+<div dir=3D"ltr">personligt<br clear=3D"none">
+</div>
+<div dir=3D"ltr">at i s=E5 fald var jeg selv ansvarlig for v=E6kst af skimm=
+el. Det n=E6gter<br clear=3D"none">
+</div>
+<div dir=3D"ltr">jeg at anderkende. F=F8rst og fremmest fordi sagen har lig=
+get hen<br clear=3D"none">
+</div>
+<div dir=3D"ltr">i op mod 2 m=E5neder, derudover fordi der allerede er synl=
+ig v=E6kst af<br clear=3D"none">
+</div>
+<div dir=3D"ltr">skimmel.<br clear=3D"none">
+</div>
+<div dir=3D"ltr"><br clear=3D"none">
+</div>
+<div dir=3D"ltr">Jeg har modtaget ingen information om sagens forl=F8b fra =
+hverken jer<br clear=3D"none">
+</div>
+<div dir=3D"ltr">(bestyrelsen) eller Gjensidige Forsikring som jeg har l=E6=
+rt er<br clear=3D"none">
+</div>
+<div dir=3D"ltr">forsikringsselskabet der benyttes. Dette har jeg l=E6rt ef=
+ter at<br clear=3D"none">
+</div>
+<div dir=3D"ltr">kontakte vicev=E6rten ift. information.<br clear=3D"none">
+</div>
+<div dir=3D"ltr"><br clear=3D"none">
+</div>
+<div dir=3D"ltr">Jeg er interesseret i at f=E5 udbedret skaderne. Men jeg h=
+ar ikke i<br clear=3D"none">
+</div>
+<div dir=3D"ltr">sinde at lukke h=E5ndv=E6rkere ind i min ejendom og begynd=
+e at rive ting<br clear=3D"none">
+</div>
+<div dir=3D"ltr">fra hinanden uden at have p=E5 skrift hvad det er de skal =
+lave,<br clear=3D"none">
+</div>
+<div dir=3D"ltr">og hvem der skal betale.<br clear=3D"none">
+</div>
+<div dir=3D"ltr">Endvidere har jeg pt. ingen anelse om hvad det rent faktis=
+k er,<br clear=3D"none">
+</div>
+<div dir=3D"ltr">udover at gulv og loft skal rives op. Samt at nogle k=F8kk=
+enskabe<br clear=3D"none">
+</div>
+<div dir=3D"ltr">skal fjernes. Og s=E5 noget med loftet i entr=E9en ogs=E5.=
+ - Dette har<br clear=3D"none">
+</div>
+<div dir=3D"ltr">jeg f=E5et fra mundtlig overlevering af en g=E6st som tilf=
+=E6ldigvis var<br clear=3D"none">
+</div>
+<div dir=3D"ltr">i vores lejlighed for at passe vores barn da Skadesservice=
+ kommer<br clear=3D"none">
+</div>
+<div dir=3D"ltr">uanmeldt og afhenter affugteren og laver m=E5linger.<br cl=
+ear=3D"none">
+</div>
+<div dir=3D"ltr"><br clear=3D"none">
+</div>
+<div dir=3D"ltr">I er velkommen til at kontakte mig telefonisk, per email e=
+ller personlig<br clear=3D"none">
+</div>
+<div dir=3D"ltr">p=E5 adressen s=E5 vi kan f=E5 udreddet dette her.<br clea=
+r=3D"none">
+</div>
+<div dir=3D"ltr"><br clear=3D"none">
+</div>
+<div dir=3D"ltr">Mvh<br clear=3D"none">
+</div>
+<div dir=3D"ltr">Ronni Elken Lindsgaard<br clear=3D"none">
+</div>
+<div dir=3D"ltr">Haraldsgade 96 3. th<br clear=3D"none">
+</div>
+<div dir=3D"ltr"><a rel=3D"nofollow" shape=3D"rect" target=3D"_blank" href=
+=3D"mailto:rel@zx.dk">rel@zx.dk</a><br clear=3D"none">
+</div>
+<div dir=3D"ltr">&#43;45 31 48 28 60<br clear=3D"none">
+</div>
+<br clear=3D"none">
+<br clear=3D"none">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+--_000_HE1P190MB0043044AB88B6282015725D19A0A0HE1P190MB0043EURP_--

@@ -1,0 +1,281 @@
+Return-Path: <lp_e_aps@yahoo.dk>
+Delivered-To: rel@zx.dk
+Received: from mail.tyknet.dk
+	by mail.tyknet.dk (Dovecot) with LMTP id QmdhMVrhN1q12gAAHsVLpg
+	for <rel@zx.dk>; Mon, 18 Dec 2017 15:40:41 +0000
+Received: from sonic307-7.consmr.mail.ir2.yahoo.com (sonic307-7.consmr.mail.ir2.yahoo.com [87.248.110.32])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by mail.tyknet.dk (Postfix) with ESMTPS id 89393BA4BBE
+	for <rel@zx.dk>; Mon, 18 Dec 2017 15:40:41 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.10.3 mail.tyknet.dk 89393BA4BBE
+Authentication-Results: mail.tyknet.dk;
+	dkim=pass (2048-bit key; unprotected) header.d=yahoo.dk header.i=@yahoo.dk header.b=H5H8IWeQ
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.dk; s=s2048; t=1513611640; bh=OfefuHnpKnKkfOKbPfkEWyeqwjLU5TXv2KVrUGxn8/M=; h=Date:From:Reply-To:To:In-Reply-To:References:Subject:From:Subject; b=H5H8IWeQegceQoh/Ij+d3fJiNIRsqFofFb4Rl4ELrayWhyKM9q2ASfqnVXVsqboYa1m2jS2JQAK3DyuNYoLZSav1ooMwZRu4YBfWYmVmcIE13hvyrHKrr1CvKsq+dmcmhEl4n/1J9Emu6cAJTOUMnhx8mhousuBjNQ+wyYZd7prWJGSXVyWFWDJiRZSofLWUGuwV3lEaHOf3Ol6bx4/wFOSBKFHIRE73NKY2vt8vihJ96/iLID8WscZ2F1tKx3Oc4u+6ask4iOzX7AXEpCdVXu8iGIcRJylaf7VL8LM/b8WdDM4uffcC50XAb+aeDIKUcuGQB9LytRTnTXVF01pY8g==
+X-YMail-OSG: gt18lwUVM1nuIOwrRDewErAEtQ12RZuPAcWmEme7OCaziuDI0rym2PIuNa48Uq_
+ p43atDMelGf.f67MKPp91OjotTWGR1KfPjkCRvH6KQvkThrYGpWwM8PheXcHMEIHB9RjT1g2HV4U
+ jSqXUZVlgCGrvTdhm0LdLSYL1c__eUBxXLvMk90NHz3Fr1WuNuP5PphBFf9Pmc5uKp3NRyOHXnQg
+ zZcareED1DtjBV6fJDw1q84ADJ4VDNTvE4aoemg5jdFnUDQDKBNhQCEi7KdaB.4iMV25eGfHNKGM
+ MG3SYV735HpFDKiSes3gz1SiDy6UiRoMXUM1ZfDq2CAKLvjFx_CydRPkv70r6sIib3BDFx1XwAZ7
+ Jg2uHK8DgPLps4NODslUJUqM0JmC9aIkclzrmGUOfcvdw2qbcNql4PqQM8wVV3sdksjTVPbmmM6f
+ g8VI_9YqAkDL.QDtQDt69OAasxaaEwVNfymbbaitRCvN.WzPer0Mbg8nS8sVL8JcagHMnMubCPMN
+ Z6X4a8crjGZY-
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic307.consmr.mail.ir2.yahoo.com with HTTP; Mon, 18 Dec 2017 15:40:40 +0000
+Date: Mon, 18 Dec 2017 15:40:37 +0000 (UTC)
+From: Lars Pii <lp_e_aps@yahoo.dk>
+Reply-To: Lars Pii <lp_e_aps@yahoo.dk>
+To: "rel@zx.dk" <rel@zx.dk>
+Message-ID: <873323150.1409301.1513611637131@mail.yahoo.com>
+In-Reply-To: <32409a7bf8730adc4dff5b72dd91169f@zx.dk>
+References: <OF5B128743.01D43062-ONC12581FA.00354E39-C12581FA.0035E7B4@tryg.dk> <32409a7bf8730adc4dff5b72dd91169f@zx.dk>
+Subject: SV: Fwd: Vedr. skade 756 - 142058 14-12-2017 1 T22H
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1409300_1932979580.1513611637126"
+X-Mailer: WebService/1.1.11051 YahooMailNeo Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+
+------=_Part_1409300_1932979580.1513611637126
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hej Ronnijeg forst=C3=A5r ikke hvad det er,=C2=A0 jeg skal sende til forsik=
+ring!
+jeg forst=C3=A5r heller ikke hvad du mener med,=C2=A0 at tapet k=C3=B8kkens=
+kabe dsl ikke bliver d=C3=A6kket, s=C3=A5 langt er vi slet ikke kommet.Fors=
+ikring har forel=C3=B8big givet d=C3=A6kning til nedtagning/nedrivningderef=
+ter skal der indhentes tilbud p=C3=A5 retlabering- af det nedrevede/ =C3=B8=
+delagte som forsikringen s=C3=A5 skal godkende.
+hvis du med "relokering" mener genhusning- s=C3=A5 er det dit eget selskab =
+du skal s=C3=B8ge om det.
+Har skadesservice vendt tilbage, om hvorn=C3=A5r de kommer.mvh Lars=20
+
+    Den 11:09 mandag den 18. december 2017 skrev "rel@zx.dk" <rel@zx.dk>:
+=20
+
+ K=C3=A6re Lars
+
+Er det noget du kan videresende til forsikringsselskabet?
+
+Alts=C3=A5 ang. sovev=C3=A6relse.
+
+Jeg var i telefonisk kontakt med Skadesservice fredag, i f=C3=B8rste omgang=
+=20
+om formiddagen
+=C2=A0 blev jeg videresendt til en Lauer som jeg umiddelbart ikke kunne f=
+=C3=A5 fat=20
+p=C3=A5. Jeg fik fat
+p=C3=A5 ham omkring kl 15 hvor han sagde at de ikke havde mulighed for at=
+=20
+komme mandag
+men at de ville ringe i l=C3=B8bet af formiddagen i dag mandag. S=C3=A5 meg=
+et har=20
+de alts=C3=A5 heller
+ikke hastet formoder jeg.
+
+I=C3=B8vrigt har vi besluttet at vi gerne vil s=C3=B8ge om kompensering for=
+=20
+relokering
+mens byggearbejdet st=C3=A5r p=C3=A5 i denne fase og ogs=C3=A5 efterf=C3=B8=
+lgende etaper.
+Som n=C3=A6vnt har vi en nu 3 m=C3=A5neder gammel s=C3=B8n som ammes fuld u=
+d. Moren er=20
+utryg
+ved at skulle amme mens der render h=C3=A5ndv=C3=A6rkere rundt i lejlighede=
+n.=20
+Endvidere
+er vi bekymret for barnets s=C3=B8vn og som konsekvens deraf hans helbred.
+
+Mvh
+Ronni Elken Lindsgaard
+
+-------- Original Message --------
+Subject: Vedr. skade 756 - 142058 14-12-2017 1 T22H
+Date: 18.12.2017 10:48
+ From: TJMINDBO <tjmindbo@tryg.dk>
+To: rel@zx.dk
+Reply-To: tjmindbo@tryg.dk
+
+Hej Ronni
+
+Vi har modtaget din mail.
+
+S=C3=A5fremt det er jeres Vicev=C3=A6rt Lars Pii der st=C3=A5r for kontakte=
+n med
+forsikringsselskabet,
+vil vi anbefale, at du over for ham p=C3=A5peger de skader som der ikke er=
+=20
+medtaget i
+rapporten
+og der derfor ikke er givet d=C3=A6kningstilsagn til fra ejendommens=20
+forsikring.
+Det er s=C3=A5 herefter ham der m=C3=A5 g=C3=A5 videre med dette, s=C3=A5 d=
+er bliver taget=20
+h=C3=A5nd om
+de skader
+som man tilsyneladende ikke har opdaget eller villet notere i f=C3=B8rste=
+=20
+omgang.
+
+Hvad ang=C3=A5r k=C3=B8kkenskabene vil de blive betragtet som v=C3=A6rende=
+=20
+bygningsdele,
+idet der er tale om fastmonterede skabe.
+Det der menes med ting der ikke er en del af bygningen er=20
+l=C3=B8s=C3=B8re/indbogenstande,
+alts=C3=A5 ting man f.eks. ville tage med sig n=C3=A5r man flytter og i vis=
+se=20
+tilf=C3=A6lde kan
+der ogs=C3=A5 v=C3=A6re tale
+om t=C3=A6pper.
+
+De n=C3=A6vnte ting, tapet og k=C3=B8kkenskabe, er ikke omfattet af din=20
+indboforsikring.
+
+God dag
+Venlig hilsen
+
+
+(Embedded image moved to file: pic11462.gif)
+Maria Hansson
+
+Tjenestem=C3=A6ndenes Forsikring
+Skadeafdelingen
+
+Telefon: 44 20 61 20 - E-mail: tjmindbo@tryg.dk
+
+Tjenestem=C3=A6ndenes Forsikring - Ramsingsvej 28 A - 2500 Valby
+Denne e-mail kan indeholde fortrolig information. S=C3=A5fremt du ikke er=
+=20
+rette
+modtager, bedes du venligst informere afsenderen herom samt slette=20
+e-mailen.
+
+Bem=C3=A6rk: Tjenestem=C3=A6ndenes skadeafdeling har f=C3=A6lles email adre=
+sse for at=20
+sikre en
+bedre kundeservice.
+V=C3=A6lger du at bruge den personlige email adresse forl=C3=A6nger du=20
+sagsbehandlingen
+betydeligt.
+
+F=C3=A5 adgang til dine forsikringspapirer nemt og sikkert p=C3=A5 Min Side
+
+Referencenummer: 756 - 142058 14-12-2017 1
+
+(See attached file: Dokument fra Tryg.pdf)
+
+  =20
+------=_Part_1409300_1932979580.1513611637126
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><div style=3D"color:#000; background-color:#fff; f=
+ont-family:verdana, helvetica, sans-serif;font-size:16px"><div id=3D"yui_3_=
+16_0_ym19_1_1513610553809_23609"><span>Hej Ronni</span></div><div id=3D"yui=
+_3_16_0_ym19_1_1513610553809_23609" dir=3D"ltr"><span id=3D"yui_3_16_0_ym19=
+_1_1513610553809_23966">jeg forst=C3=A5r ikke hvad det er,&nbsp; jeg skal s=
+ende til forsikring!</span></div><div id=3D"yui_3_16_0_ym19_1_1513610553809=
+_23609" dir=3D"ltr"><span><br></span></div><div id=3D"yui_3_16_0_ym19_1_151=
+3610553809_23609" dir=3D"ltr"><span id=3D"yui_3_16_0_ym19_1_1513610553809_2=
+3757">jeg forst=C3=A5r heller ikke hvad du mener med,&nbsp; at tapet k=C3=
+=B8kkenskabe dsl ikke bliver d=C3=A6kket, s=C3=A5 langt er vi slet ikke kom=
+met.</span></div><div id=3D"yui_3_16_0_ym19_1_1513610553809_23609" dir=3D"l=
+tr"><span id=3D"yui_3_16_0_ym19_1_1513610553809_23707">Forsikring har forel=
+=C3=B8big givet d=C3=A6kning til nedtagning/nedrivning</span></div><div id=
+=3D"yui_3_16_0_ym19_1_1513610553809_23609" dir=3D"ltr"><span id=3D"yui_3_16=
+_0_ym19_1_1513610553809_23744">derefter skal der indhentes tilbud p=C3=A5 r=
+etlabering- af det nedrevede/ =C3=B8delagte som forsikringen s=C3=A5 skal g=
+odkende.</span></div><div id=3D"yui_3_16_0_ym19_1_1513610553809_23609" dir=
+=3D"ltr"><span><br></span></div><div id=3D"yui_3_16_0_ym19_1_1513610553809_=
+23609" dir=3D"ltr"><span id=3D"yui_3_16_0_ym19_1_1513610553809_23967">hvis =
+du med "relokering" mener genhusning- s=C3=A5 er det dit eget selskab du sk=
+al s=C3=B8ge om det.</span></div><div id=3D"yui_3_16_0_ym19_1_1513610553809=
+_23609" dir=3D"ltr"><span><br></span></div><div id=3D"yui_3_16_0_ym19_1_151=
+3610553809_23609" dir=3D"ltr"><span id=3D"yui_3_16_0_ym19_1_1513610553809_2=
+4045">Har skadesservice vendt tilbage, om hvorn=C3=A5r de kommer.</span></d=
+iv><div id=3D"yui_3_16_0_ym19_1_1513610553809_23609" dir=3D"ltr"><span>mvh =
+Lars</span></div> <div class=3D"qtdSeparateBR"><br><br></div><div class=3D"=
+yahoo_quoted" style=3D"display: block;"> <div style=3D"font-family: verdana=
+, helvetica, sans-serif; font-size: 16px;"> <div style=3D"font-family: Helv=
+eticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; fon=
+t-size: 16px;"> <div dir=3D"ltr"><font size=3D"2" face=3D"Arial"> Den 11:09=
+ mandag den 18. december 2017 skrev "rel@zx.dk" &lt;rel@zx.dk&gt;:<br></fon=
+t></div>  <br><br> <div class=3D"y_msg_container"><div dir=3D"ltr">K=C3=A6r=
+e Lars<br></div><div dir=3D"ltr"><br></div><div dir=3D"ltr">Er det noget du=
+ kan videresende til forsikringsselskabet?<br></div><div dir=3D"ltr"><br></=
+div><div dir=3D"ltr">Alts=C3=A5 ang. sovev=C3=A6relse.<br></div><div dir=3D=
+"ltr"><br></div><div dir=3D"ltr">Jeg var i telefonisk kontakt med Skadesser=
+vice fredag, i f=C3=B8rste omgang <br></div><div dir=3D"ltr">om formiddagen=
+<br></div><div dir=3D"ltr">&nbsp; blev jeg videresendt til en Lauer som jeg=
+ umiddelbart ikke kunne f=C3=A5 fat <br></div><div dir=3D"ltr">p=C3=A5. Jeg=
+ fik fat<br></div><div dir=3D"ltr">p=C3=A5 ham omkring kl 15 hvor han sagde=
+ at de ikke havde mulighed for at <br></div><div dir=3D"ltr">komme mandag<b=
+r></div><div dir=3D"ltr">men at de ville ringe i l=C3=B8bet af formiddagen =
+i dag mandag. S=C3=A5 meget har <br></div><div dir=3D"ltr">de alts=C3=A5 he=
+ller<br></div><div dir=3D"ltr">ikke hastet formoder jeg.<br></div><div dir=
+=3D"ltr"><br></div><div dir=3D"ltr">I=C3=B8vrigt har vi besluttet at vi ger=
+ne vil s=C3=B8ge om kompensering for <br></div><div dir=3D"ltr">relokering<=
+br></div><div dir=3D"ltr">mens byggearbejdet st=C3=A5r p=C3=A5 i denne fase=
+ og ogs=C3=A5 efterf=C3=B8lgende etaper.<br></div><div dir=3D"ltr">Som n=C3=
+=A6vnt har vi en nu 3 m=C3=A5neder gammel s=C3=B8n som ammes fuld ud. Moren=
+ er <br></div><div dir=3D"ltr">utryg<br></div><div dir=3D"ltr">ved at skull=
+e amme mens der render h=C3=A5ndv=C3=A6rkere rundt i lejligheden. <br></div=
+><div dir=3D"ltr">Endvidere<br></div><div dir=3D"ltr">er vi bekymret for ba=
+rnets s=C3=B8vn og som konsekvens deraf hans helbred.<br></div><div dir=3D"=
+ltr"><br></div><div dir=3D"ltr">Mvh<br></div><div dir=3D"ltr">Ronni Elken L=
+indsgaard<br></div><div dir=3D"ltr"><br></div><div dir=3D"ltr">-------- Ori=
+ginal Message --------<br></div><div dir=3D"ltr">Subject: Vedr. skade 756 -=
+ 142058 14-12-2017 1 T22H<br></div><div dir=3D"ltr">Date: 18.12.2017 10:48<=
+br></div><div dir=3D"ltr"> From: TJMINDBO &lt;<a ymailto=3D"mailto:tjmindbo=
+@tryg.dk" href=3D"mailto:tjmindbo@tryg.dk">tjmindbo@tryg.dk</a>&gt;<br></di=
+v><div dir=3D"ltr">To: <a ymailto=3D"mailto:rel@zx.dk" href=3D"mailto:rel@z=
+x.dk">rel@zx.dk</a><br></div><div dir=3D"ltr">Reply-To: <a ymailto=3D"mailt=
+o:tjmindbo@tryg.dk" href=3D"mailto:tjmindbo@tryg.dk">tjmindbo@tryg.dk</a><b=
+r></div><div dir=3D"ltr"><br></div><div dir=3D"ltr">Hej Ronni<br></div><div=
+ dir=3D"ltr"><br></div><div dir=3D"ltr">Vi har modtaget din mail.<br></div>=
+<div dir=3D"ltr"><br></div><div dir=3D"ltr">S=C3=A5fremt det er jeres Vicev=
+=C3=A6rt Lars Pii der st=C3=A5r for kontakten med<br></div><div dir=3D"ltr"=
+>forsikringsselskabet,<br></div><div dir=3D"ltr">vil vi anbefale, at du ove=
+r for ham p=C3=A5peger de skader som der ikke er <br></div><div dir=3D"ltr"=
+>medtaget i<br></div><div dir=3D"ltr">rapporten<br></div><div dir=3D"ltr">o=
+g der derfor ikke er givet d=C3=A6kningstilsagn til fra ejendommens <br></d=
+iv><div dir=3D"ltr">forsikring.<br></div><div dir=3D"ltr">Det er s=C3=A5 he=
+refter ham der m=C3=A5 g=C3=A5 videre med dette, s=C3=A5 der bliver taget <=
+br></div><div dir=3D"ltr">h=C3=A5nd om<br></div><div dir=3D"ltr">de skader<=
+br></div><div dir=3D"ltr">som man tilsyneladende ikke har opdaget eller vil=
+let notere i f=C3=B8rste <br></div><div dir=3D"ltr">omgang.<br></div><div d=
+ir=3D"ltr"><br></div><div dir=3D"ltr">Hvad ang=C3=A5r k=C3=B8kkenskabene vi=
+l de blive betragtet som v=C3=A6rende <br></div><div dir=3D"ltr">bygningsde=
+le,<br></div><div dir=3D"ltr">idet der er tale om fastmonterede skabe.<br><=
+/div><div dir=3D"ltr">Det der menes med ting der ikke er en del af bygninge=
+n er <br></div><div dir=3D"ltr">l=C3=B8s=C3=B8re/indbogenstande,<br></div><=
+div dir=3D"ltr">alts=C3=A5 ting man f.eks. ville tage med sig n=C3=A5r man =
+flytter og i visse <br></div><div dir=3D"ltr">tilf=C3=A6lde kan<br></div><d=
+iv dir=3D"ltr">der ogs=C3=A5 v=C3=A6re tale<br></div><div dir=3D"ltr">om t=
+=C3=A6pper.<br></div><div dir=3D"ltr"><br></div><div dir=3D"ltr">De n=C3=A6=
+vnte ting, tapet og k=C3=B8kkenskabe, er ikke omfattet af din <br></div><di=
+v dir=3D"ltr">indboforsikring.<br></div><div dir=3D"ltr"><br></div><div dir=
+=3D"ltr">God dag<br></div><div dir=3D"ltr">Venlig hilsen<br></div><div dir=
+=3D"ltr"><br></div><div dir=3D"ltr"><br></div><div dir=3D"ltr">(Embedded im=
+age moved to file: pic11462.gif)<br></div><div dir=3D"ltr">Maria Hansson<br=
+></div><div dir=3D"ltr"><br></div><div dir=3D"ltr">Tjenestem=C3=A6ndenes Fo=
+rsikring<br></div><div dir=3D"ltr">Skadeafdelingen<br></div><div dir=3D"ltr=
+"><br></div><div dir=3D"ltr">Telefon: 44 20 61 20 - E-mail: <a ymailto=3D"m=
+ailto:tjmindbo@tryg.dk" href=3D"mailto:tjmindbo@tryg.dk">tjmindbo@tryg.dk</=
+a><br></div><div dir=3D"ltr"><br></div><div dir=3D"ltr">Tjenestem=C3=A6nden=
+es Forsikring - Ramsingsvej 28 A - 2500 Valby<br></div><div dir=3D"ltr">Den=
+ne e-mail kan indeholde fortrolig information. S=C3=A5fremt du ikke er <br>=
+</div><div dir=3D"ltr">rette<br></div><div dir=3D"ltr">modtager, bedes du v=
+enligst informere afsenderen herom samt slette <br></div><div dir=3D"ltr">e=
+-mailen.<br></div><div dir=3D"ltr"><br></div><div dir=3D"ltr">Bem=C3=A6rk: =
+Tjenestem=C3=A6ndenes skadeafdeling har f=C3=A6lles email adresse for at <b=
+r></div><div dir=3D"ltr">sikre en<br></div><div dir=3D"ltr">bedre kundeserv=
+ice.<br></div><div dir=3D"ltr">V=C3=A6lger du at bruge den personlige email=
+ adresse forl=C3=A6nger du <br></div><div dir=3D"ltr">sagsbehandlingen<br><=
+/div><div dir=3D"ltr">betydeligt.<br></div><div dir=3D"ltr"><br></div><div =
+dir=3D"ltr">F=C3=A5 adgang til dine forsikringspapirer nemt og sikkert p=C3=
+=A5 Min Side<br></div><div dir=3D"ltr"><br></div><div dir=3D"ltr">Reference=
+nummer: 756 - 142058 14-12-2017 1<br></div><div dir=3D"ltr"><br></div><div =
+dir=3D"ltr">(See attached file: Dokument fra Tryg.pdf)</div><br><br></div> =
+ </div> </div>  </div></div></body></html>
+------=_Part_1409300_1932979580.1513611637126--
