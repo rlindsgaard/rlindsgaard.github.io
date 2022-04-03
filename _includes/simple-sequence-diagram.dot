@@ -1,0 +1,82 @@
+digraph G {
+
+    { // Define the actor nodes in the top
+
+        // Make sure they're on the same row
+        rank=same;
+
+        // Style the actor nodes
+        node [shape=box];
+
+        actor1_top [label="Actor 1"];
+        actor2_top [label="Actor 2"];
+        actor3_top [label="Actor 3"];
+
+        // Tie them together in the right order
+        edge [style = invis];
+        actor1_top -> actor2_top -> actor3_top;
+    }
+
+    // Define the actor nodes in the bottom. This is a copy paste
+    //of the top subgraph -  s/top/bottom/g
+    {
+        rank=same;
+        node [shape=box];
+
+        actor1_bottom [label="Actor 1"];
+        actor2_bottom [label="Actor 2"];
+        actor3_bottom [label="Actor 3"];
+
+        edge [style = invis];
+        actor1_bottom -> actor2_bottom -> actor3_bottom;
+    }
+
+    // Style the event nodes
+    node [shape=point];
+    edge [arrowhead=none];
+
+    // Define the event nodes. Here they are prefixed with
+    // the actor name.
+    actor1_event1
+    actor1_event3
+
+    // Now we connect each of the events like pearls on a string.
+    actor1_top ->
+    actor1_event1 ->
+    actor1_event3 ->
+    actor1_bottom;
+
+    // Repeat. The event above has a corresponding node in the
+    // destination actor.
+    actor2_event1
+    actor2_event2
+
+    actor2_top ->
+    actor2_event1 ->
+    actor2_event2 ->
+    actor2_bottom;
+
+    // And one more time.
+    actor3_event2
+    actor3_event3
+
+    actor3_top ->
+    actor3_event2 ->
+    actor3_event3 ->
+    actor3_bottom;
+
+    // We connect each event src/dest. First we make sure they
+    // are vertically aligned.
+    {rank=same; actor1_event1 actor2_event1}
+    {rank=same; actor2_event2 actor3_event2}
+    {ranke=same; actor3_event3 actor1_event3}
+
+    // Finally, we connect the dots.
+    edge [constraint=false, arrowhead=normal];
+
+    actor1_event1 -> actor2_event1 [xlabel="start"];
+    actor2_event2 -> actor3_event2 [xlabel="do something"];
+    actor3_event3 -> actor1_event3 [xlabel="return"];
+
+    // We use xlabel, as normal labels will skew the whole thing.
+}
