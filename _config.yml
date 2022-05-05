@@ -42,8 +42,8 @@ plainwhite:
   navigation:
     - title: "$HOME"
       url: "/"
-    - title: Cover Letter
-      url: "/cover-letter"
+    - title: Resume
+      url: "/resume"
     - title: About
       url: "/about"
 
