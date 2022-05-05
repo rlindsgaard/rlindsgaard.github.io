@@ -40,7 +40,7 @@ plainwhite:
   sitemap: true
 
   navigation:
-    - title: "$HOME"
+    - title: "Blog"
       url: "/"
     - title: Resume
       url: "/resume"
