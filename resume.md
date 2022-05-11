@@ -5,11 +5,11 @@ title: Resume
 
 ## Ronni Elken Lindsgaard, MSc. Coputer Science
 
-**Systems Architect at
+**Software Engineer/Systems Architect at
 [CSIS Security Group A/S](https://csis.com)** with +10 years of technical experience
 focusing on
 
-- Systems integration
+- Systems integration 
 - High-level development/maintenance
 - Stakeholder and technology requirements elicitation
 - Department documentation
@@ -39,14 +39,19 @@ He worked part-time during his studies with **web-development, services-integrat
 and designing/developing iOS applications**.
 
 He has since then worked at CSIS Security Group A/S, gradually earning a senior
-technical position from a student position.
+technical position from a student position. Through this career working with
+
+- Data extraction from 3rd party sources
+- Systems integrations and data formatting
+- Event driven design
+- Application telemetry
+- DevOps rotation and development
 
 Bonus info:
-- Biking is the favorable method of commute.
+- The bike is prefered method of commute. He also enjoys running, rock-climbing, hiking, and outdoors life in general.
 
 - He has a mainly <span style="color:green">green</span> DISC personality type.
 
-- He enjoys running, rock-climbing, hiking, and outdoors life in general.
 
 - He has actually *read* the books (and does not form his opinion reading TL;DRs)
 
@@ -61,25 +66,7 @@ Bonus info:
 
 - You make his day by:
 
-  - Analyzing and thinking your design through before presenting your
-    partial implementation.
-
-  - Accompanying your code with great documentation (that glue the
-    business' needs to the code without going stale quickly) -- you make it
-    especially if you add graphs.
-
-  - Presenting a thought out function/integration test-suite for your code.
-
-  - Cleaning up the camp-ground.
-
-- You make him sad by:
-
-  - Breaking or mis-applying design principles tought by the ones who
-    precede us, SOLID, DRY/WET, YAGNI, etc.
-
-  - Clearly not doing the footwork with the tools you work with.
-
-  - Mocking when you should have been fake-ing or spying.
-
-  - Wasting compute time with a naive quick solution when a good design
-    would remedy it.
+  - Analyzing requirements and presenting the
+    design _before_ implementation.
+  - Thinking in documentation with the code.
+  - Cleaning up the camp-ground. 
