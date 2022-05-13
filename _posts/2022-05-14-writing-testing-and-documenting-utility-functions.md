@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Writing, Testing and Documenting Utility Functions
+title: "Writing, Testing and Documenting Utility Functions"
+categories: "Software Engineering"
 ---
 
 # Writing, Testing, and Documenting utility functions.
