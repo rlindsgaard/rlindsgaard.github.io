@@ -100,11 +100,13 @@ def strftime(dt: datetime, fmt='%Y-%m-%dT%H:%M:%S'):
     return dt.strftime(fmt)
 ```
 
-These utility functions are so simple that when looking at the code it does not bring any value. However, when generating documentation for the utility library you see some benefit.
+These utility functions are so simple that when looking at the code it does not bring any value.
+However, when generating documentation for the utility library you see some benefit.
 
-![screenshot-sphinx-no-docstrings]
+![screenshot-sphinx-with-docstrings](/assets/utility-functions/sphinx-with-docstrings.png)
 
-![screenshot-sphinx-with-docstrings]
+(without a docstring, by default sphinx will not show you the function in the first
+place)
 
 And of course, there is more to it.
 
@@ -128,7 +130,10 @@ def isoformat(dt: datetime):
     return dt.strftime('%Y-%m-%dT%H:%M:%S')
 ```
 
-It is way more descriptive and readable than `:rtype: str` is it not?
+It is way more descriptive and readable than `:rtype: str` is it not? And you get
+some neat formatting in your documentation too
+
+![sphinx-doctest](/assets/utility-functions/sphinx-doctest.png)
 
 
 ## Summary
