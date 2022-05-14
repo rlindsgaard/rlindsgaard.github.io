@@ -1,7 +1,13 @@
 ---
 layout: post
 title: "Writing, Testing and Documenting Utility Functions"
-categories: "Software Engineering"
+tags:
+  - python
+  - sphinx
+  - testing
+  - documentation
+categories:
+  - Software Engineering
 ---
 
 # Writing, Testing, and Documenting utility functions.
