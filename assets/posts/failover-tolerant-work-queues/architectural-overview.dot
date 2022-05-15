@@ -1,0 +1,34 @@
+digraph G {
+  // Architectural overview
+  
+  subgraph cluster_production{
+    label="Production Environment";
+    
+    production_db;
+    production_queue;
+    production_application;
+    
+    production_application -> 
+      production_queue;
+    production_application -> 
+      production_db;
+  }
+  
+  subgraph cluster_failover{
+    label="Failover Environment";
+    
+    failover_db;
+    failover_queue;
+    failover_application;
+    
+    failover_application ->
+      failover_queue;
+    failover_application ->
+      failover_db; 
+  }
+  
+  production_db -> 
+    failover_db 
+    [style=dashed];
+  
+}
