@@ -24,15 +24,32 @@ This can be handled on the infrastructure level by simply replicating the queue 
 
 ## Requirements
 - Persistent replicated state store. We will assume a structured database but it can just as well be a file.
-- An asyncronous work queue
+- An asyncronous work queue system
+- 
+ 
 ## Design
 - Grapviz drawing
-- Application state/workflow
+- Application state/workflow 
+
+### Overview
+The design makes use of the persistent state in order to generate a _checkpoint_ when the work is submitted, we need to store all information in the state that is needed to do the computation which is usually passed directly as to the background worker.
+
+In postgres we can do this as a trigger to keep the operation atomic. Atomicity is not strictly needed here though.
+
+
 ### Checkpoint
+
+
+### Application State
+### Atomicity
 ### Recovery
- 
+#### Manual Recovery
+#### Automated
+
 ## Example
 ## Idempotence/Side Effects
+## Pub/Sub
+## Pipelines
 
 ## Summary
 - 
