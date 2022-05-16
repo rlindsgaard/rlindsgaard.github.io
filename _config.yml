@@ -44,6 +44,8 @@ plainwhite:
       url: "/"
     - title: Resume
       url: "/resume"
+    - title: Knowledge Portfolio
+      url: "/knowledge-portfolio" 
     - title: About
       url: "/about"
 
