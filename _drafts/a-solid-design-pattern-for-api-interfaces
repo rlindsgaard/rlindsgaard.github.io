@@ -1,0 +1,34 @@
+---
+layout: post
+title: A SOLID Design Pattern for API Interfaces
+categories:
+  - Softare Engineering
+---
+
+# A SOLID Design Pattern for API Interfaces
+
+In this post I will present a design pattern I use when integrating application logic with an external API. 
+
+For this I make use of the _service_ and _translator_ pattern.
+
+Overview
+========
+
+
+Example
+=======
+
+Service
+-------
+- Routing
+
+Translator
+----------
+- 
+
+
+A SOLID Analysis
+================
+
+Summary
+=======
