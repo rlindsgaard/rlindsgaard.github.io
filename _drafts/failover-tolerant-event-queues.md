@@ -45,23 +45,55 @@ Once the job is complete, the checkpoint is removed.
 Before submitting the job to a queue, we will create a _checkpoint_ in the persisent store. This checkpoint should store all the data needed to complete the job. This is a replica of the current state of the queue, however it contains only the parts we need in order to start re-scheduling and start processing jobs on the failover system.
 
 
-In postgres we can do this as a trigger to keep the operation atomic. Atomicity is not strictly needed here though.
-
 The values necessary for a checkpoint
 
 - id
 - scheduled
 - 
 
+```
+create table checkpoint (
+  —- Table primary key
+  id serial primary key
+  —- Timestamp
+  scheduled timestamp not null
+  —- The actual payload
+  payload text
 
-### Application State
+)
+``` 
+
+In postgres we can do this as a trigger to keep the operation atomic. Atomicity is not strictly needed here though.
+
+```
+—- Pg trigger implementation for python
+```
+
+
+Note, this table can easily be expanded to contain checkpoints for all multiple queues by adding a queue identifier column.
+
+
 ### Atomicity
+To avoid 
+
 ### Recovery
+
+Depending of the failover setup, recovering the state can be done by a one-off command or it can be done as part of normal operations.
+
 #### Manual Recovery
+
+```
+SELECT * FROM 
+```
+Due to the atomic constraint in the job processing we can easily get all jobs
+
 #### Automated
 
 ## Example
 ## Idempotence/Side Effects
+
+The strategy and example 
+
 ## Pub/Sub
 ## Pipelines
 
