@@ -5,21 +5,28 @@ title: Resume
 
 ## Ronni Elken Lindsgaard, MSc. Coputer Science
 
-**Software Engineer/Systems Architect at
-[CSIS Security Group A/S](https://csis.com)** with +10 years of technical experience
-focusing on
+### Introduction
 
-- Systems integration 
-- High-level development/maintenance
-- Stakeholder and technology requirements elicitation
-- Department documentation
-- Team consulting/training.
+**Software Engineer/Systems Architect at [CSIS Security Group A/S](https://csis.com)**
+I have +15 years of experience designing, writing, and maintaining production
+code ranging over web-, mobile-, and backend-applications.
 
-He applies best practices, experience, and thorough research to his work, continuously
-sharpening his skills and knowledge on design practices, and the tools, and
-technologies he works with.
-He has a **pragmatic** and **empathic** approach to his own and his colleagues' work
-knowing that **done is better than perfect**.
+I specialize in:
+
+- Application design/architecture
+- Backend systems integration
+- Documentation (technical writing, automation, visualization)
+- Testing
+
+In my work I specially apply and continually focus on improving
+
+- Pragmatism, working with the tools at hand and knowing done is better than perfect.
+- Clean Code and design, learning and applying industry and framework best practices.
+- TTD and Testing as first class code.
+
+I read the stdlib reference, the man page, read RFC, or lookup the source code - whenever each of them is appropriate. Then, I start consulting google and stackoverflow.
+
+### Technical Background
 
 Being an early 80's kid, Ronni has witnessed how computers and technology has
 taken the world by storm as he, himself, grew. From his earliest memories, he was
@@ -38,8 +45,8 @@ His thirst for more knowledge made him realise his dream of taking a degree at
 He worked part-time during his studies with **web-development, services-integration
 and designing/developing iOS applications**.
 
-He has since then worked at CSIS Security Group A/S, gradually earning a senior
-technical position from a student position. Through this career working with
+He has since then worked at CSIS Security Group A/S a senior
+technical position gradually from a student position. Through this career working with
 
 - Data extraction from 3rd party sources
 - Systems integrations and data formatting
@@ -69,4 +76,4 @@ Bonus info:
   - Analyzing requirements and presenting the
     design _before_ implementation.
   - Thinking in documentation with the code.
-  - Cleaning up the camp-ground. 
+  - Cleaning up the camp-ground.
