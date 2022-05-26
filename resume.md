@@ -7,24 +7,23 @@ title: Resume
 
 ### Introduction
 
-**Software Engineer/Systems Architect at [CSIS Security Group A/S](https://csis.com)**
+**Senior Software Engineer/Systems Architect at [CSIS Security Group A/S](https://csis.com)**
 I have +15 years of experience designing, writing, and maintaining production
 code ranging over web-, mobile-, and backend-applications.
 
-I specialize in:
+I currently work with backend system integration responsible for integrating with customer systems supporting critical security monitoring.
 
-- Application design/architecture
-- Backend systems integration
-- Documentation (technical writing, automation, visualization)
-- Testing
+I see myself as a craftsman, employing a pragmatic approach to software engineering. I see technologies, languages and platforms as tools. I hold no overzealous opinions towards any, although I hold preferences — The right one is the what gets the job done. I love adding new tools to my toolbox and to improve my expertise of the ones I know. I am not afraid of reading the source, the manual, or the RFC. And I constantly seek to improve my knowledge and skillset through books, courses and just getting my feet wet.
 
-In my work I specially apply and continually focus on improving
+I practice clean code and simple declarative design. I see testing and documentation as an integral part of writing software.
 
-- Pragmatism, working with the tools at hand and knowing done is better than perfect.
-- Clean Code and design, learning and applying industry and framework best practices.
-- TTD and Testing as first class code.
+### A passion for writing code
 
-I read the stdlib reference, the man page, read RFC, or lookup the source code - whenever each of them is appropriate. Then, I start consulting google and stackoverflow.
+I have been writing software for more than 20 years, learning myself object oriented programming before starting high-school.
+Joining as partner in a web-development company I learned that I was more of a Steve Wozniack than a Steve Jobs, and that there was a lot I needed to know.
+
+Working part time through my studies, have allowed me to continually gain the hands on experience academia cannot give.
+
 
 ### Technical Background
 
@@ -54,26 +53,12 @@ technical position gradually from a student position. Through this career workin
 - Application telemetry
 - DevOps rotation and development
 
-Bonus info:
-- The bike is prefered method of commute. He also enjoys running, rock-climbing, hiking, and outdoors life in general.
+## Bonus info
 
-- He has a mainly <span style="color:green">green</span> DISC personality type.
+- I prefer to bike for commuting. I also enjoy running, rock-climbing, and outdoors life in general.
 
+- I have a mainly <span style=“color:green”>green</span> DISC personality profile and know what that requires of me.
 
-- He has actually *read* the books (and does not form his opinion reading TL;DRs)
+- I tinker and build other things than software with my bare hands.
 
-  - The New Testament
-
-  - The life-changing magic of tidying up
-
-  - Test Driven Development by example
-
-- His main expertise is, really, learning and applying lessons from every
-  situation and experience presented to him in life.
-
-- You make his day by:
-
-  - Analyzing requirements and presenting the
-    design _before_ implementation.
-  - Thinking in documentation with the code.
-  - Cleaning up the camp-ground.
+ 
