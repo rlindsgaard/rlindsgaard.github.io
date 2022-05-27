@@ -39,11 +39,25 @@ Depending on the use checkpoints we can structure metadata around
  
 I prefer using a database, a bucket or a system file can also be used.
 
-A 
+## Submitting the background job
+
+- Atomic operation?
+- Background job arguments
+
+## Processing the queue
+
+- Checking out the data
 
 
 ## Loading the State
 
 ## Testing
 
+- Functional test
+
 ## Telemetry
+- Unit of work
+ - succeses
+ - failures
+- Lead time
+- Cycle time
