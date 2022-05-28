@@ -19,10 +19,14 @@ Frequent applications I have encountered includes:
 
 Each of these applications of course has different solutions as well. I prefer solving by supple design. This design works for virtualized as well as cloud environments.
 
+## Choosing technologies
+
+- State
+- Queue background worker
+
 ## A Concrete Use Case
 
 A customer sends us a list of items in a structured file for batch processing. When this happens we iterate trough the list, depending on the concrete item in our portfolio we query different suppliers for price and availability, add in our own policies and shipping prices in order to generate a daily price list.
-
 
 
 ## Save the State
@@ -38,6 +42,24 @@ Depending on the use checkpoints we can structure metadata around
 - A specific use case (DRYing similar business rules)
  
 I prefer using a database, a bucket or a system file can also be used.
+
+I use the following base schema
+
+- A primary key column
+- A field containing the queue name (for the latter two)
+- A field with the payload
+- A created timestamp
+
+in postgres it looks like this
+
+ ```
+ create table checkpoint (
+     id bigint serial primary key
+     queue varchar
+     payload text
+     created timestamp
+ )
+ ```
 
 ## Submitting the background job
 
