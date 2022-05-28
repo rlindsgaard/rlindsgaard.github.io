@@ -11,7 +11,7 @@ title: Resume
 I have +15 years of experience designing, writing, and maintaining production
 code ranging over web-, mobile-, and backend-applications.
 
-I currently work with backend system integration responsible for integrating with customer systems supporting critical security monitoring.
+I am currently responsible for the design and implementation of integrating with customer systems supporting critical security monitoring with high-availability requirements using a service-oriented, event-driven architecture across multiple systems. Requirements coming from multiple stakeholders within the organisation as well as customer specific requirements.
 
 I see myself as a craftsman, employing a pragmatic approach to software engineering. I see technologies, languages and platforms as tools. I hold no overzealous opinions towards any, although I hold preferences — The right one is the what gets the job done. I love adding new tools to my toolbox and to improve my expertise of the ones I know. I am not afraid of reading the source, the manual, or the RFC. And I constantly seek to improve my knowledge and skillset through books, courses and just getting my feet wet.
 
