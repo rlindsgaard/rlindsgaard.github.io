@@ -17,19 +17,34 @@ Frequent applications I have encountered includes:
 
 - Persisting state of the workflow for failover tolerance.
 
+It also enables us to use in-memory message queues for the workflow, improving overall system performance. 
+
 Each of these applications of course has different solutions as well. I prefer solving by supple design. This design works for virtualized as well as cloud environments.
+
+## Architectural Overview
+
+
 
 ## Choosing technologies
 
-- State
-- Queue background worker
+To get this setup running we need two technologies
+
+#. A place to store the checkpoint
+#. A message queue
+
+### State
+
+The state needs to be accessible by the workers. The
+
+### Message Queue
+
 
 ## A Concrete Use Case
 
 A customer sends us a list of items in a structured file for batch processing. When this happens we iterate trough the list, depending on the concrete item in our portfolio we query different suppliers for price and availability, add in our own policies and shipping prices in order to generate a daily price list.
 
 
-## Save the State
+## The State Schema
 
 First of all, we need to find out where to store the checkpoints. 
 
