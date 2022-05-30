@@ -23,6 +23,14 @@ Each of these applications of course has different solutions as well. I prefer s
 
 ## Architectural Overview
 
+We depict it using a producer/consumer model
+
+!(graphviz-image)[assets/queue-checkpoints-architecture.png]
+
+
+The producer is responsible for adding the checkpoint. When computation completes, the consumer removes the job.
+
+The idea comes from erlang [source needed]
 
 
 ## Choosing technologies
@@ -98,3 +106,12 @@ in postgres it looks like this
  - failures
 - Lead time
 - Cycle time
+
+## Applying the pattern
+
+I mentioned the pattern was supple, let us dive into how to extend it for
+
+### Large files
+### Map/Reduce computation
+### Pipelines
+### Failover tolerance
