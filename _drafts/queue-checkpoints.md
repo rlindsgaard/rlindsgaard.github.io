@@ -112,6 +112,25 @@ in postgres it looks like this
 I mentioned the pattern was supple, let us dive into how to extend it for
 
 ### Large files
+
+Large objects don’t go well in a database common and is to me an anti-pattern.
+
+For this use-case, we write the file when creating the checkpoint, pass on the location.
+
+!(large-files-example)[/assets/queue-checkpoints/pattern-extended-blob.png]
+
+
 ### Map/Reduce computation
+
+There are different ways to do map reduce, one example is to keep track of the chunks or jobs and simply trigger
+
 ### Pipelines
-### Failover tolerance
+
+For a pipeline, I like to add checkpoints whenever data is extracted from a third party source. If something should go wrong, the pipeline can be restarted from the last checkpoint.
+
+This is really where the idea for this pattern comes from in the first place.
+
+
+
+
+### Failover tolerance/Recovery
