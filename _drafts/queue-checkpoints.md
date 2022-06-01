@@ -40,11 +40,22 @@ To get this setup running we need two technologies
 #. A place to store the checkpoint
 #. A message queue
 
+
 ### State
 
-The state needs to be accessible by the workers. The
+A shared state between producer and consumers is needed. This is where the actual job data is stored.
+
+For small jobs, the queue in itself might be able to store the data - however job sizes are usually limited to KBs, where I am mostly interested in job sizes that may be MBs large.
+
+
 
 ### Message Queue
+
+The message queue is responsible for delegating the work. In it we store the reference to the checkpoint added.
+
+Most queue systems have the possibility to write their state to disk. However, we are still faced with a size limitation.
+
+Furthermore, message queue implementations revolve around queueing first and it can be hard to inspect the actual state.
 
 
 ## A Concrete Use Case
