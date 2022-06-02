@@ -100,6 +100,15 @@ in postgres it looks like this
 - Atomic operation?
 - Background job arguments
 
+Ideally, the background job and the checkpoint is created as an atomic operation. For postgres we can make use of triggers to create the background job as part of the row insert.
+
+```
+postgres trigger example
+```
+
+Alternatively, the checkpoint is submitted to the database before the job is submitted to the queue.
+
+
 ## Processing the queue
 
 - Checking out the data
