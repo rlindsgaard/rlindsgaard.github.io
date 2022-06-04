@@ -1,0 +1,6 @@
+#!/bin/sh
+
+OUTDIR=$(dirname $1)
+OUTFILE=$(basename $1 .dot)
+
+dot -Tpng "${1}" > "${OUTDIR}/${OUTFILE}.png"
