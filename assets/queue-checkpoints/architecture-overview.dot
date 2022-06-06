@@ -1,2 +1,14 @@
 digraph G {
+  node [shape=box];
+  splines=false;
+
+  producer;
+  message_queue;
+  consumer;
+  state [shape="cylinder"];
+
+  producer -> state [xlabel="Stores checkpoint"];
+  producer -> message_queue [xlabel="Creates message"];
+  consumer -> state [xlabel="Reads/Deletes checkpoint"];
+  consumer -> message_queue [xlabel="Receive message"];
 }
