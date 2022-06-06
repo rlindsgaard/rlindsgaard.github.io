@@ -5,7 +5,7 @@ layout: post
 
 # Adding Checkpoints to Your Background Work
 
-At times it can be beneficial to add checkpoints when performing a set of background operations. 
+At times it can be beneficial to add checkpoints when performing a set of background operations.
 
 Frequent applications I have encountered includes:
 
@@ -17,7 +17,7 @@ Frequent applications I have encountered includes:
 
 - Persisting state of the workflow for failover tolerance.
 
-It also enables us to use in-memory message queues for the workflow, improving overall system performance. 
+It also enables us to use in-memory message queues for the workflow, improving overall system performance.
 
 Each of these applications of course has different solutions as well. I prefer solving by supple design. This design works for virtualized as well as cloud environments.
 
@@ -25,7 +25,7 @@ Each of these applications of course has different solutions as well. I prefer s
 
 We depict it using a producer/consumer model
 
-!(graphviz-image)[assets/queue-checkpoints-architecture.png]
+!(graphviz-image)[assets/queue-checkpoints/architecture-overview.png]
 
 
 The producer is responsible for adding the checkpoint. When computation completes, the consumer removes the job.
@@ -65,7 +65,7 @@ A customer sends us a list of items in a structured file for batch processing. W
 
 ## The State Schema
 
-First of all, we need to find out where to store the checkpoints. 
+First of all, we need to find out where to store the checkpoints.
 
 Depending on the use checkpoints we can structure metadata around
 
@@ -74,7 +74,7 @@ Depending on the use checkpoints we can structure metadata around
 - A specific workflow
 
 - A specific use case (DRYing similar business rules)
- 
+
 I prefer using a database, a bucket or a system file can also be used.
 
 I use the following base schema
