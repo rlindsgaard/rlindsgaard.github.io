@@ -1,6 +1,9 @@
 ---
 title: “Adding checkpoints to your background work”
 layout: post
+categories:
+  - Software Engineering
+  
 ---
 
 # Adding Checkpoints to Your Background Work
@@ -111,10 +114,14 @@ Alternatively, the checkpoint is submitted to the database before the job is sub
 
 ## Processing the queue
 
-- Checking out the data
+When an event is processed, the checkpoint is read. Once the work is complete, the checkpoint is deleted.
+ 
+## Fault tolerance 
 
+## Idempotence and side-effects
 
-## Loading the State
+This pattern applied directly comes with the cave-at that you may end up with replaye
+
 
 ## Testing
 
@@ -129,7 +136,7 @@ Alternatively, the checkpoint is submitted to the database before the job is sub
 
 ## Applying the pattern
 
-I mentioned the pattern was supple, let us dive into how to extend it for
+I mentioned the pattern was supple, let us dive into how to extend it for different purposes. The application also puts constraints and requirements on the implementation.
 
 ### Large files
 
@@ -151,6 +158,4 @@ For a pipeline, I like to add checkpoints whenever data is extracted from a thir
 This is really where the idea for this pattern comes from in the first place.
 
 
-
-
-### Failover tolerance/Recovery
+### Failover Recovery
