@@ -3,6 +3,9 @@ JEKYLL_VERSION = 3.8
 WORKING_DIRECTORY = $(shell pwd)
 all: clean build serve
 
+install:
+	docker run --rm --volume="$(WORKING_DIRECTORY):/srv/jekyll" -it jekyll/jekyll:$(JEKYLL_VERSION) bundle install
+
 update:
 	docker run --rm --volume="$(WORKING_DIRECTORY):/srv/jekyll" -it jekyll/jekyll:$(JEKYLL_VERSION) bundle update
 
