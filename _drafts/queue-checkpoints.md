@@ -120,7 +120,11 @@ When an event is processed, the checkpoint is read. Once the work is complete, t
 
 ## Idempotence and side-effects
 
-This pattern applied directly comes with the cave-at that you may end up with replaye
+The cave-at of an asynchronous workflow is that you must choose between replaying failed jobs or drop them.
+
+Where possible, atomicity is to be preferred - i.e. when updating internal database records.
+
+You need to know the possible side effects. In my experience, that is a case by case analysis.
 
 
 ## Testing
