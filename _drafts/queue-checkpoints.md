@@ -24,6 +24,9 @@ It also enables us to use in-memory message queues for the workflow, improving o
 
 Each of these applications of course has different solutions as well. I prefer solving by supple design. This design works for virtualized as well as cloud environments.
 
+## Where this pattern does not apply
+
+
 ## Architectural Overview
 
 We depict it using a producer/consumer model
