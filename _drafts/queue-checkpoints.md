@@ -26,6 +26,7 @@ Each of these applications of course has different solutions as well. I prefer s
 
 ## Where this pattern does not apply
 
+This pattern is designed for work queues where the queue is responsible for dispatching messages - i.e. if you have a streaming scenario where the consumer keeps track of the current location you should choose to setup a different design.
 
 ## Architectural Overview
 
