@@ -28,7 +28,11 @@ Each of these applications of course has different solutions as well. I prefer s
 
 This pattern is designed for work queues where the queue is responsible for dispatching messages - i.e. if you have a streaming scenario where the consumer keeps track of the current location you should choose to setup a different design.
 
-## Architectural Overview
+It is an application layer pattern that ensbles you to keep state for specific purposes. If the pattern applies to all or most of the purpose of the overall application, an infrastructure solution ought to be considered.
+
+## The Problem
+
+## Solution Overview
 
 We depict it using a producer/consumer model
 
@@ -37,7 +41,7 @@ We depict it using a producer/consumer model
 
 The producer is responsible for adding the checkpoint. When computation completes, the consumer removes the job.
 
-The idea comes from erlang [source needed]
+The idea originally comes from learning and working with erlang. I would like to attribute it to [cite: erlang programming 2nd edition] or [cite: learnyousomeerlang] however, searching both references for concise formulation of the problem have been futile for me, in any case, the applications or diverse use of the pattern is all my own thinking.
 
 
 ## Choosing technologies
