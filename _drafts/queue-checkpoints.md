@@ -32,6 +32,12 @@ It is an application layer pattern that ensbles you to keep state for specific p
 
 ## The Problem
 
+You have two kinds of asyncronous operations or jobs in a workflow. The ones you can easily compute or recover from and the ones that are hard or expensive to compute.
+
+In the former category is making aggregations on data, some kinds of database inserts etc.
+
+The hard ones are expensive algorithms or downloading data from a third party. Things that gets inexpensive if we take the time to identify them, and save our effort once we’ve completed that operation.
+
 ## Solution Overview
 
 We depict it using a producer/consumer model
