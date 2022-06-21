@@ -22,13 +22,16 @@ Frequent applications I have encountered includes:
 
 It also enables us to use in-memory message queues for the workflow, improving overall system performance.
 
-Each of these applications of course has different solutions as well. I prefer solving by supple design. This design works for virtualized as well as cloud environments.
+Each of these applications of course has different implementations basing off this supple pattern. This design should work for standalone, virtualized, as well as cloud environments.
 
 ## Where this pattern does not apply
 
-This pattern is designed for work queues where the queue is responsible for dispatching messages - i.e. if you have a streaming scenario where the consumer keeps track of the current location you should choose to setup a different design.
+This pattern is designed to for work queues where the queue is responsible for dispatching messages - i.e. if you have a streaming scenario where the consumer keeps track of the current location you should choose to setup a different design.
 
 It is an application layer pattern that ensbles you to keep state for specific purposes. If the pattern applies to all or most of the purpose of the overall application, an infrastructure solution ought to be considered.
+
+## Some terminology
+
 
 ## The Problem
 
