@@ -1,5 +1,5 @@
 ---
-title: When and How to Apply Design Principles
+title: A Seniors Guide to Applying Design Principles 
 layout: post
 categories:
   - Software Engineering
