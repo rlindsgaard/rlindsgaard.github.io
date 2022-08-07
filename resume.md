@@ -7,90 +7,44 @@ title: Resume
 
 ### Profile
 
-**Senior Backend Software Engineer/Systems Architect at [CSIS Security Group A/S](https://csis.com)**
-with +15 years of experience designing, writing, and maintaining production
-code.
+I am a craftsman who loves building things, virtual as well as physically.
 
-I am currently responsible for the design and implementation of
-integrating with customer systems supporting critical security
-monitoring with high-availability/fault tolerant requirements
-using a service-oriented, event-driven architecture deployed
-across  multiple systems. I balance requirements coming from multiple
-stakeholders from within and outside the organisation.
+Since my years in middle school my hobby has revolved around internet technologies.  A hobby that have since grown into a profession, pure serendipity. 
 
-I also do
+I enjoy the process and labor that goes into designing and building software systems — therefore the business processes and quality of the resulting product is of high importance to me.
 
-- Full scope project planning, analysis and estimates
-  (from pre-sales inception to implementation) in a kanban environment.
-- Cross-project/High-level design and service infrastructure maintenance
-- Technical consulting and alignment with other teams
-- Department wide recommendations and guidelines
-- Organisation of recurring department retreats and hackathons
+I have over 15 years of professional experience developing and maintaining software systems working across full stack deployed to different environments. On top of that, I spent half a decade more teaching myself the art of computer programming in private.
 
-In the past 8 years I have risen gradually in seniority from a
-student position to a senior position holding the **second highest
-technical development position in the company**. I have also learned
-that **I would rather lead by example** than by position.
+My MSc in Computer Science has given me a broad mathematical and theoretical background that enables me to quickly grasp and understand new concepts and technologies.
 
-Working at the same company for almost a decade has taught me
-how to design and **write code that must be maintained**. As a result,
-**I practice clean code, best practices, and simple design**.
+My development experience has given me a strong foundation and hard-earned lessons in
+- Agile practices 
+- Producing quality software
+- Understanding and outweighing business and customer needs against “correctness”
+- Running and maintaining production code.
+- As well as many other.
 
-Throughout my employment I have had hands on experience with
-- Full stack development
+I work towards mastery and in my work employ
+- Pragmatism and agility
+- Test Driven Development and Continuous integration
+- Frequent refactoring based on deeper knowledge of the problem domain
+- Well established design principles (and when not to use them)
+- Frequent feedback and alignment from technical peers and stakeholders
+- Experience based foresight
 
-- Technical analysis and project planning
+In order to thrive I need
+- A clear separation of concerns and well defined priorities, goals, and responsibilities
+- A culture of learning and continuous improvment within the confines of the team as well as on an inter-team and organisational level.
+- A culture of responsibility — A strong team that can work autonomously and feel strongly towards the quality of the product.
+- A culture of respect and inclusion, in meetings as well as in the canteen
 
-- Working in a DevOps environment including working on the infrastructure
-  supporting
+Reversely, a feeling of stagnation or status quo bias from peers or the organisation is detrimental to my motivation. 
 
-  - Continuous Integration
-
-  - Testing
-
-  - Documentation
-
-  - Deployment
-
-  - Telemetry
-
-  - Systems monitoring
-
-  across different environments including virtualization, cloud and SaaS.
-
-- Ingesting intelligence form 3rd party data sources
-
-- On-boarding and managing personnel
-
-- Maintaining/Refactoring/Replacing legacy systems
-
-I work best in a free-reins environment where requirements and
-prioritization is aligned regularly. I like to spar often with
-technical peers and project management to get the best result
-possible and I use small iterations as I think early feedback is key to any
-good design.
-Getting a chance to present my work, either via peer review or
-demoing, done or half finished, is to me the best way to share
-knowledge and learn from each-other.
-
-I see myself as a craftsman, **employing experience and best practices**
-for writing software. I am not afraid of reading the source, the manual,
-or the RFC.
-I hold my work to high standards to such a degree that I have
-had to cognitively learn that **done is better than perfect**,
-that not all technical debt necessarily need to be resolved, and not
-to expect my peers to have the same attitude towards
-their work as me. Keeping a pragmatic approach to software engineering
-and experience have also taught me to not have an
-overzealous attitude towards any specific language, platform or
-technology. They are all tools to get the job done and **I welcome
-the challenge of new ideas and paradigms** any of them bring
-to the mix.
-
-I am on a constant journey seeking to improve my skill-set, and
-to broaden my perspective. I do this via books, courses, and,
-plain old, **getting my feet wet** -- Learning something new every
-day is a personal success criteria for me.
+To the table I bring
+- An honest, intelligent, mature, well humoured,  and respectful colleague with a professional mindset.
+- Enthusiasm for the quality of the product regarding DevEx and UX.
+- A positive, honest and constructive mindset who knows that empathy is important when giving feedback.
+- An eagerness to share knowledge and experience via mentoring, pair programming and/or presentations.
 
 ### Education
 
@@ -136,7 +90,7 @@ for:
 
 - Bulk integration across different CRM/Webshop/Inventory
   management systems -- later to be component- and product-ized
-  as IEX.
+  as IEX. A system that is a succesful product product and standalone company today.
 
 - Customer and sales relations
 
