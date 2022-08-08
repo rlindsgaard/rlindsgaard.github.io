@@ -42,8 +42,8 @@ plainwhite:
   navigation:
     - title: "Blog"
       url: "/"
-    - title: Resume
-      url: "/resume"
+    - title: Profile
+      url: "/profile"
     - title: About
       url: "/about"
 
