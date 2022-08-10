@@ -6,15 +6,24 @@ I see it mostly as a result of code DRYing. Whether it should be DRYed in the fi
 
 I.e. it happens when we want to do the same thing for two different objects - resulting in sligthly different behavior
 
-## The anti-pattern
+## The (anti-) pattern
 
 A simple example is when the caller takes “charge” of the control of the subroutine. Here we have an order that is processed - depending on where i
 
 
 ```
-def check_order_lines(order, send_notification=False):
-    for item in order:
-      if not item.in_stock():
+def foo():
+  baz()
+
+def bar():
+  baz(False)
+
+def baz(bat=True):
+  if bat:
+    # Do something
+  else:
+    # Do something else 
+
         
 ```
 
