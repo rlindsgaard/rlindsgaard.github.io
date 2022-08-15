@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Resume
+title: Profile
 ---
 
-## Ronni Elken Lindsgaard, MSc. Coputer Science
+## Ronni Elken Lindsgaard, MSc. Computer Science
 
 ### Profile
 
-I am a craftsman who loves building things, virtual as well as physically.
+I am a [craftsman](https://manifesto.softwarecraftsmanship.org/) who loves building things, virtual as well as physically.
 
 Since my years in middle school my hobby has revolved around internet technologies.  A hobby that have since grown into a profession, pure serendipity. 
 
