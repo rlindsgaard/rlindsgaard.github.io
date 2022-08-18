@@ -1,0 +1,150 @@
+DRY or _Don’t Repeat Yourself_ is an acronym often used as a synonym to de-duplication. In this post I will try to discuss not as much the differences between
+
+## A word on clean functions
+- Always a verb or a verb phrase, functions do things. The name should
+- Do one thing
+- Step down
+- Always use kwarg names
+- Separate Query and Command (do one thing)
+
+## Control-flow Parameterization
+
+I consider this form of de-duplication a direct anti-pattern.
+
+In it’s simplest (and most innocent) form it looks something like this
+
+```
+def foo():
+    abstract_func('foo', True)
+  
+def bar():
+    abstract_func('bar')
+    
+    
+def abstract(param1, param2=False):
+    result = ''
+    for _ in range(10):
+       result += param1 
+    
+    if param2:
+       with open('func.txt', mode='w') as f:
+       f.write(result)
+```
+
+There is a lot of things wrong with this example (I had to conjure something simple, please imagine something more complex) - but in terms of de-duplication the abstraction does not make sense, but the code works because the calling code controls the behavior of underlying code.
+
+The “abstraction” is simply wrong, and ought to have looked something like
+
+```
+def foo():
+    abstract('foo')
+
+
+def bar():
+    abstrsct('bar')
+
+
+def abstract(param1):
+    result = ''
+    for _ in range(10):
+        result += param1
+    return result  
+
+def abstract_bar(result)
+    with open('func.txt', mode='w') as f:
+        f.write(result)
+```
+
+
+## Pre-mature DRY
+
+- Discouraged
+- Premature DRY
+- Hard to undo, risk of turning into control-flow parametrization
+
+Is it business policy, an abstraction or is it a way to save some lines of code. If it is the latter, you trade lines of code for intrinisc cognitive load. Furthermore, there is a high risk another developer wants to re-use it (it was DRYed already, must be for a good reason) - so instead of undoing the de-duplication, she adds a parameter for her special case (it’s the easiest thing to do) - moving the code into the control flow parametrization anti-pattern.
+
+If this is a business policy, e.g a specific way to specify or ensure order, or an abstraction in order to save typing characters you may be on to something though as you will be defining “inherent behavior”
+
+
+### If you must
+If you think you are on to something, but there is argument as to whether the code ought to be de-duplicated - or you are not entirely sure you got inherent behavior yet - consider this design
+
+
+```
+def func1():
+    func1_partially_abstract('foo')
+ 
+ 
+def func1_partially_abstract(arg):
+    truly_abstract(arg1, arg2, arg)
+
+
+def func2():
+    func2_partially_abstract('bar')
+
+
+def func2_partially_abstract(arg):
+    truly_abstract(arg1, arg2, arg)
+ 
+
+def truly_abstract(arg1, arg2, arg3):
+    # work on arg1, arg2, arg3
+    
+```
+
+This design has a couple og benefits
+
+- It is declarative, as you clearly separate arguments that are there due to the abstraction and which ones are actual values passed through.
+- You can “switch” back from truly_abstract without changing any of the calling code. I.e. later WET operation becomes cheaper
+- Should a third occurence occur where control-flow parametrization would be likely - it is likely possible to make this control flow part of the partial function, keeping truly_abstract truly abstract.
+
+
+## Inherent Behavior
+
+aka the DRY-principle applied
+
+
+### Business Policy
+Business policy may be defined by the business as specific requirement such as “a number must always be displayed with us formatted thousand separator” or “all amounts must be displayed in the user configured currency”
+
+It can also be defined by technical staff. “All timestamps must be stored in UTC” - basically, all the inherent rules about writing code that you did not realise you needed to learn to get your PRs approved when starting this position that had nothing to do with whether the code was working or not.
+
+For the most part, these things “ought” to have been abstracted away via the platform, but have materialized in such a way experienced staff simply does it without thinking about it.
+
+But guess what - policies change. Government policies, organization policies - even senior developers policies of what constitutes best practice. At least if they’re worth anything, otherwise they stopped learning.
+
+
+### Informal Interface
+
+Have you ever tried having to “do things a certain way” in order to get the code to work?
+Define specific variables or arguments that your code needs to take, and maybe pass on to the underlying system without you ever touching it?
+
+That is an informal interface you need to adhere to.
+
+The best thing here is to formally define that interface as it is a text-book example of when you need a layer of abstraction in order to not repeat yourself.
+
+That abstraction layer and formalised interface may be a big refactor and re-design away in order to get right as there are probably more moving parts that need to fit.
+
+An alternative is to take just the offending parts and wrap around your code, simply hiding away the “stuff you don’t need”
+
+
+### Boilerplate code
+
+Sometimes, you just want to save some characters. You’ve written this stuff numerous times before and it always looks the same because it is really just an extension of the standard library code, applied to your domain.
+
+One thing I almost always end up adding to a util mode my projects is
+
+```
+def read_json(filename):
+    with open(filename, mode='r') as f:
+        return json.load(f)
+```
+
+Another one is such a good DRY example that it has now actually made it into the python standard library:  datetime.isoformat()
+
+
+## If in doubt, leave it out
+
+
+
