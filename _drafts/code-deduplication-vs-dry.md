@@ -41,7 +41,7 @@ def foo():
 
 
 def bar():
-    abstrsct('bar')
+    abstract_bar(abstract('bar'))
 
 
 def abstract(param1):
@@ -55,8 +55,80 @@ def abstract_bar(result)
         f.write(result)
 ```
 
+### The danger lies in the evolution
 
-## Pre-mature DRY
+After you’re done. Another developer comes in and needs to do the same, print and then save. She finds the abstraction and thinks “hey, that’s just what I need to do” (accidental simlar toplogy). She then works the abstraction a bit (it’s easy) to work with ints as well.
+
+[example]
+
+Now, later you come back and removes `foo`
+
+
+
+## Inheritance-based control flow
+
+You might be tempted to another de-deplication attempt where the control-flow happens via named functions. The above example would look like
+
+```
+def foo():
+    abstract_foo(‘foo’)
+    
+def abstract_foo(param1):
+    abstract(param1) 
+
+
+def bar():
+    abstract_bar(‘bar’)
+
+
+def abstract_bar(param1)
+    result = abstract(param1)
+    with open(‘func.txt’, mode=‘w’) as f:
+        f.write(result)
+        
+
+def abstract(param1):
+    result = ‘’
+    for _ in range(10):
+        result += param1
+    return result
+
+```
+
+## The Problem with Control-flow abstractions
+- Function should do just one thing
+- Open-closed principle. I.e an abstraction should work like a black box
+- Adds intrinsic and germane cognitive load
+- Undoing the abstraction is hard and will most likely result in even more
+ 
+
+## Accidental Similarity de-duplication
+
+In basketball and handball respectively, you dribble a ball. The rules of dribbling in the two games are very similar. The “computations” for dribbling, i.e. the muscle groups etc. are exactly the same.
+
+
+### Inheritance over composition
+
+- Tight coupling
+- Easily turns into control-flow when similarities end
+- 
+ 
+This pattern is an effect of choosing inheritance over composition. I have been the culprit of this myself until understanding that principle fully (hint: it does not only apply to objects)
+
+It happens when we start in different places and their codepaths merge - we have two different things with to different business policies, and they just happen to have the exact same policy, right now.
+
+We are developers and we are quite good at spotting patterns, so naturally if we mingle it about we can explain it in the exact same way.
+
+In the best case, those policies never change. But the abstraction has a tendency to add an immense cognitive load as more variables are introduced in order to tell “which of the paths we’re in”.
+It can be explained the same as it is the same operations we perform on both, but the “result” are two different things. And the return type you would have to define using… inheritance.
+
+
+Worst case, but if the policies should change, you will most likely see the control-flow anti-pattern in effect .
+
+It is not an anti-pattern per se, but I highly discourage it as it falls under the “composition over inheritance” principle.
+
+
+## Maybe(DRY)
 
 - Discouraged
 - Premature DRY
@@ -67,7 +139,7 @@ Is it business policy, an abstraction or is it a way to save some lines of code.
 If this is a business policy, e.g a specific way to specify or ensure order, or an abstraction in order to save typing characters you may be on to something though as you will be defining “inherent behavior”
 
 
-### If you must
+### Clean Abstractions
 If you think you are on to something, but there is argument as to whether the code ought to be de-duplicated - or you are not entirely sure you got inherent behavior yet - consider this design
 
 
@@ -142,6 +214,10 @@ def read_json(filename):
 ```
 
 Another one is such a good DRY example that it has now actually made it into the python standard library:  datetime.isoformat()
+
+
+### It _is_ the same thing
+
 
 
 ## If in doubt, leave it out
