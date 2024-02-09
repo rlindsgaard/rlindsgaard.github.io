@@ -1,0 +1,2 @@
+Mccabe complexity is a metric that measures code complexity by identifying the possible code paths throughout a program. Its practical usage or more its validity is heavily debated at some patterns that does not result in high load scored quite high, whereas highly complicated code to a human might score low. I will not discuss that here but focus on another possible use that I want to put to the test: Using the delta value of the mccabe score to determine which of the two are “cleaner” (or at least more declarative)
+
