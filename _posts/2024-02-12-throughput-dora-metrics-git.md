@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Extrapolating the throughput DORA metrics directly from a git repository"
+title: "Extrapolating the Throughput DORA Metrics Directly From Your Git Repository"
 tags:
   - DORA
   - git
@@ -35,7 +35,8 @@ Beware that you do not inadvertently add a code injection vulnerability into you
 
 ## Deployment Frequency
 Deployment frequency is the time between deployments to the production system. I like to adopt the terminology of continuous delivery pipelines and use the term “release” instead of “deployment”. Given a deployment can be an internal deployment to a certain cluster etc of a release candidate. This mixed terminology has got me confused more than once.
-In order to calculate the metric, we simply need to know the timestamps of each individual release and can then computethe mean of all the timedeltas between the releases.
+In order to calculate the metric, we simply need to know the timestamps of each individual release and can then compute the mean of all the timedeltas between the releases.
+Notice that when to record this timestamp differs whether you are doing continuous deployments or working with release candidates.
 
 ```
 def get_releases():
@@ -55,8 +56,6 @@ def calculate_deployment_frequency(releases):
     return statistics.mean(deltas)
 
 ```
-
-*Authors note: I’m curious as to whether it makes sense to produce the mean of the entire history and make it “grow” or whether we should be looking at a specific window - e.g. half a year or one year back or a set number of releases. Another method would be using a moving average or mean - I believe that would either be a better indicator or just sugarcoating.*
 
 ## Lead Time for Change
 The mean time to deploy is a bit more tricky to compute and requires the known timestamps of each and any change made as well as which release it is part of. We want to calculate the distance from all of these changes to the release timestamp. 
