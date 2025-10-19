@@ -42,9 +42,9 @@ Pay it forward to your future self and practice being explicit in words giving a
 
 Even more important is to write down what is currently *not* working or missing (so that you do not come back after an extended period of time, thinking work is complete and merge it to find out you entirely missed everything but the golden path). 
 
-I love pointing to https://commit.style/ and
-https://dhwthompson.com/2019/my-favourite-git-commit as good short examples where https://cbea.ms/git-commit covers the good commit message in depth. 
-I also recommend adopting something akin to https://www.conventionalcommits.org/en/v1.0.0/ - not for the properties of parsing and automating generation of changelogs but for the purpose of ensuring all important pieces of information for posteritys sake are somewhat added the commit message.
+I love pointing to <https://commit.style/> and
+<https://dhwthompson.com/2019/my-favourite-git-commit> as good short examples where <https://cbea.ms/git-commit> covers the good commit message in depth. 
+I also recommend adopting something akin to <https://www.conventionalcommits.org/en/v1.0.0/> - not for the properties of parsing and automating generation of changelogs but for the purpose of ensuring all important pieces of information for posteritys sake are somewhat added the commit message.
 
 
 If you think this sound like a lot of work, then then at first you maybe right - this brings me to tip #4.
@@ -53,7 +53,7 @@ If you think this sound like a lot of work, then then at first you maybe right -
 
 Consider commits on a branch as "staged" changes - they are up for revision until they hit the main branch, in terms of content, description, and order for that matter - learn to quickly do history re-writes, the more you do it, the more second nature it becomes. Here is a selection of such re-writes I use on a daily to weekly basis.
 
-See also https://about.gitlab.com/blog/keeping-git-commit-history-clean/ for some more in-depth explanation of my presented scenarios. As an aside https://ohshitgit.com/ explains a number of ways to get you out of any pickle you are bound to get yourself into trying out these things.
+See also <https://about.gitlab.com/blog/keeping-git-commit-history-clean/> for some more in-depth explanation of my presented scenarios. As an aside <https://ohshitgit.com/> explains a number of ways to get you out of any pickle you are bound to get yourself into trying out these things.
 
 ### Add a missing file/change to the last commit 
 `git commit --amend --reuse-message=HEAD` will commit any changes currently staged. I alias it `git fix`
@@ -89,7 +89,7 @@ Pro tip: Rebasing is just an operation that replays a set of commits onto a new 
 
 ## Tip #5: Learn the Internals of Git
 
-You don’t have to like working in the command line or even be able to get yourself out of any particular jam - but you need to invest time understanding the basics and the internals of Git. Most important is knowing the concepts and terminology just for the purpose of googling and prompting to get yourself out of a rot. Pro Git is available for free https://git-scm.com/book/en/v2 and is recommended reading for anyone working profesionally with software development.
+You don’t have to like working in the command line or even be able to get yourself out of any particular jam - but you need to invest time understanding the basics and the internals of Git. Most important is knowing the concepts and terminology just for the purpose of googling and prompting to get yourself out of a rot. Pro Git is available for free <https://git-scm.com/book/en/v2> and is recommended reading for anyone working profesionally with software development.
 
 In the end, nothing replaces learning the commands and their flags little by little with the help of the command line output and a manual.
 
