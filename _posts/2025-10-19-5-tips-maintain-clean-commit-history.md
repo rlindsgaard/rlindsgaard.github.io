@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "5 Tips to Maintaining a Clean Commit History as an Individual Contributor"
+title: "5 Tips to Maintain a Clean Commit History as an Individual Contributor"
 categories:
  - "Software Engineering"
 ---
