@@ -24,7 +24,7 @@ My unwavering focus on code quality and technical debt led me to explore systems
 
 This pursuit of quality has made me the engineer that I am today. I like that engineer.
 
-I have also learned that the quality I sought was a golden calf. I have had the humilifying experience of working on the same codebase long enough to witness the unintended consequences of my own work. One experience that stands out to me was a refactoring initiative I took on for the purpose of improving code quality -- years later, working with the same code I found my earlier assumptions to be false, and my "improvements" had made the code worse. This lesson, among others, has forced me to rethink my definition of code quality.
+I have also learned that the quality I sought was a golden calf. I have had the humbling experience of working on the same codebase long enough to witness the unintended consequences of my own work. One experience that stands out to me was a refactoring initiative I took on for the purpose of improving code quality -- years later, working with the same code I found my earlier assumptions to be false, and my "improvements" had made the code worse. This lesson, among others, has forced me to rethink my definition of code quality.
 
 Quality is not about a uniform and tidy codebase, it is about adaptability. I have found that it is better to leave working code unchanged unless you absolutely have to, regardless of how it looks.
 
