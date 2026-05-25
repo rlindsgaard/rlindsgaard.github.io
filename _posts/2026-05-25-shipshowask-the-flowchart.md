@@ -19,7 +19,7 @@ In short, the approach categorise changes into three scenarios
 **ask** - Request and discuss feedback before going any further. Perfect for inter-team changes, newcomers to the code-base and re-designs
 
 
-My addition is the flowchart below combining the whole thing into a single decision tree.
+My contribution is the flowchart below combining the whole thing into a single decision tree from the perspective of an individual contributor.
 
 ![Ship/Show/Ask - The Flowchart v1](/assets/shipshowask.jpeg)
 
