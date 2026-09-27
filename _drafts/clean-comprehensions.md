@@ -1,8 +1,0 @@
-
-
-- Side effects
-
-
-
-- Readability
-- 
